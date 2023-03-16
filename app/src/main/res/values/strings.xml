@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ClaimChapChap</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello">Hello,</string>
+    <string name="help_today">How may we help you today?</string>
+    <string name="insurance_cover">What type of Insurance Cover would you like to get?</string>
+    <string name="select_product">select the product type</string>
+    <string name="comprehensive">Comprehensive</string>
+    <string name="comprehensive_explanation">Loss or damage of insured vehicle from Accident, fire, theft and legal liabilities to third parties for bodily injury and property damages</string>
+    <string name="third_party_fire_and_theft">Third Party Fire and Theft</string>
+    <string name="tpft_explanatiion">Loss of insured vehicle due to fire or theft and legal liabilities to third parties for bodily injury and property damage.</string>
+    <string name="third_party">Third Party</string>
+    <string name="third_party_explanation">Legal liabilities caused to third parties for bodily injury or death and damage to property.</string>
+    <string name="act_only_cover">Act Only Cover</string>
+    <string name="ac_only_explanation">Legal liabilities to third parties for bodily injuries and death only</string>
+</resources>

@@ -33,11 +33,6 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         // fragment manager
-        supportFragmentManager.commit {
-            replace<HomeFragment>(R.id.nav_host_fragment_activity_main)
-            setReorderingAllowed(true)
-            addToBackStack("name")
-        }
 
     }
 }

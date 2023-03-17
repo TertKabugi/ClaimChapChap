@@ -22,15 +22,27 @@ class PoliciesFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
+        val policiesViewModel =
             ViewModelProvider(this).get(PoliciesViewModel::class.java)
 
         _binding = FragmentPoliciesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        val carName: TextView = binding.policyOne
+        policiesViewModel.text.observe(viewLifecycleOwner) {
+            carName.text = it
+        }
+        val policyDetails: TextView = binding.txtPolicyOne
+        policiesViewModel.policy.observe(viewLifecycleOwner){
+            policyDetails.text = it
+        }
+        val carNameOne: TextView = binding.policyTwo
+        policiesViewModel.textOne.observe(viewLifecycleOwner) {
+            carNameOne.text = it
+        }
+        val policyDetailsOne: TextView = binding.txtPolicyTwo
+        policiesViewModel.policyOne.observe(viewLifecycleOwner){
+            policyDetailsOne.text = it
         }
         return root
     }

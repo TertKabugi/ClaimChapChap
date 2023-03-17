@@ -10,4 +10,9 @@ class ClaimsViewModel : ViewModel() {
         value = "This is notifications Fragment"
     }
     val text: LiveData<String> = _text
+
+    private val _anotherText = MutableLiveData<String>().apply {
+        value = "Another TextView "
+    }
+    val anotherText: LiveData<String> = _anotherText
 }

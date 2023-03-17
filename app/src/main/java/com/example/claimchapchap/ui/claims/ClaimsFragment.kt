@@ -22,15 +22,20 @@ class ClaimsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
+        val claimsViewModel =
             ViewModelProvider(this).get(ClaimsViewModel::class.java)
 
         _binding = FragmentClaimsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
+        claimsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+        }
+
+        val anotherText: TextView = binding.anotherText
+        claimsViewModel.anotherText.observe(viewLifecycleOwner) {
+            anotherText.text = it
         }
         return root
     }

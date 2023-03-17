@@ -29,7 +29,7 @@
             android:textSize="40sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Policies"/>
+            android:text="@string/policies"/>
 
     </RelativeLayout>
 
@@ -50,7 +50,7 @@
                 android:textSize="25sp"
                 android:textAlignment="center"
                 android:textColor="@color/red"
-                android:text="View Your Policy Covers Below"/>
+                android:text="@string/view_policy"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -61,7 +61,7 @@
                 android:textSize="20sp"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
-                android:text="Click for details"/>
+                android:text="@string/click"/>
 
             <RelativeLayout
                 android:id="@+id/rlPolicyOne"

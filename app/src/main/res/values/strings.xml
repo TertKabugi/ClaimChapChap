@@ -15,4 +15,10 @@
     <string name="third_party_explanation">Legal liabilities caused to third parties for bodily injury or death and damage to property.</string>
     <string name="act_only_cover">Act Only Cover</string>
     <string name="ac_only_explanation">Legal liabilities to third parties for bodily injuries and death only</string>
+    <string name="policies">Policies</string>
+    <string name="claims">Claims</string>
+    <string name="new_claim">New Claim</string>
+    <string name="view_claim">View your claim information below</string>
+    <string name="click">Click for details</string>
+    <string name="view_policy">View Your Policy Covers Below</string>
 </resources>

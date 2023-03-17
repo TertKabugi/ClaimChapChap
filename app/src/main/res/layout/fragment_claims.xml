@@ -1,35 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.claims.ClaimsFragment">
+    tools:context=".ui.polices.PoliciesFragment">
 
-    <TextView
-        android:id="@+id/text_notifications"
+    <RelativeLayout
+        android:id="@+id/actionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        android:background="@color/blue">
 
-    <TextView
-        android:id="@+id/anotherText"
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvPolicies"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/claims"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/actionBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_notifications" />
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:text="@string/view_claim"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:text="@string/click"/>
+
+            <RelativeLayout
+                android:id="@+id/rlPolicyOne"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/textView1"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_corners">
+
+                <ImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="80dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    tools:src="@drawable/derash"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/policyOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imgOne"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPolicyOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/policyOne"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/imgOne"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPolicyTwo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rlPolicyOne"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_corners">
+
+                <ImageView
+                    android:id="@+id/imgTwo"
+                    android:layout_width="80dp"
+                    android:layout_height="86dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    tools:src="@drawable/derash" />
+
+                <TextView
+                    android:id="@+id/policyTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imgTwo"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPolicyTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/policyTwo"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/imgTwo"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/newClaim"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/rlPolicyTwo"
+                android:background="@drawable/rounded_corners_one"
+                android:backgroundTint="@color/blue"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_new" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView3"
+                    android:layout_marginTop="-1dp"
+                    android:text="@string/new_claim"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

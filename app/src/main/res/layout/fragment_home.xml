@@ -9,6 +9,7 @@
     android:layout_marginTop="0dp">
 
     <RelativeLayout
+        android:background="@color/blue"
         android:id="@+id/rlIntroduction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,16 +30,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="220dp"
-                android:src="@android:drawable/ic_menu_sort_by_size" />
+                android:src="@drawable/ic_menu" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp">
 
                 <ImageView
@@ -46,14 +47,14 @@
                     android:layout_width="43dp"
                     android:layout_height="45dp"
                     android:layout_marginEnd="20dp"
-                    android:src="?android:attr/actionModeWebSearchDrawable" />
+                    android:src="@drawable/ic_search" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="43dp"
                     android:layout_height="45dp"
                     android:layout_marginEnd="0dp"
-                    android:src="@drawable/ic_notifications_black_24dp" />
+                    android:src="@drawable/ic_baseline_notifications_24" />
 
             </LinearLayout>
         </RelativeLayout>
@@ -70,9 +71,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/hello"
+                android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="30sp" />
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/text_help"
@@ -81,9 +84,11 @@
                 android:layout_below="@+id/text_hello"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
                 android:text="@string/help_today"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
         </RelativeLayout>
     </RelativeLayout>
@@ -100,8 +105,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp"
+            android:textColor="@color/blue"
             android:text="@string/insurance_cover"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/text_select"
@@ -110,24 +116,27 @@
             android:layout_below="@+id/text_insurance_covers"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
             android:text="@string/select_product"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <RelativeLayout
             android:id="@+id/rlComprehensive"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_below="@id/text_select"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corners">
 
             <ImageView
                 android:id="@+id/imgComprehensive"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@drawable/derash" />
 
             <TextView
                 android:id="@+id/comprehensive"
@@ -137,7 +146,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/imgComprehensive"
                 android:text="@string/comprehensive"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -147,26 +156,30 @@
                 android:layout_below="@+id/comprehensive"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginEnd="20dp"
                 android:layout_toEndOf="@+id/imgComprehensive"
+                android:textSize="15sp"
                 android:text="@string/comprehensive_explanation" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rlTPFT"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_below="@id/rlComprehensive"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corners">
 
             <ImageView
                 android:id="@+id/imgTPFT"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@drawable/derash" />
 
             <TextView
                 android:id="@+id/tpft"
@@ -176,7 +189,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/imgTPFT"
                 android:text="@string/third_party_fire_and_theft"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -188,24 +201,27 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:layout_toEndOf="@+id/imgTPFT"
+                android:textSize="15sp"
                 android:text="@string/tpft_explanatiion" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rlThirdParty"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_below="@id/rlTPFT"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corners">
 
             <ImageView
                 android:id="@+id/imgThirdParty"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@drawable/derash" />
 
             <TextView
                 android:id="@+id/thirdParty"
@@ -215,7 +231,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/imgThirdParty"
                 android:text="@string/third_party"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -227,24 +243,28 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:layout_toEndOf="@+id/imgThirdParty"
+                android:textSize="15sp"
                 android:text="@string/third_party_explanation" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rlActOnly"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:layout_below="@id/rlThirdParty"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corners">
 
             <ImageView
                 android:id="@+id/imgActOnly"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@drawable/derash" />
 
             <TextView
                 android:id="@+id/actOnly"
@@ -254,7 +274,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/imgActOnly"
                 android:text="@string/act_only_cover"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -266,6 +286,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="20dp"
                 android:layout_toEndOf="@+id/imgActOnly"
+                android:textSize="15sp"
                 android:text="@string/ac_only_explanation" />
         </RelativeLayout>
 

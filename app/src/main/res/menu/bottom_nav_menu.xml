@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_policies"
         android:icon="@drawable/ic_policies"
         android:title="@string/policies" />
 
@@ -12,8 +12,9 @@
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_claims"
         android:icon="@drawable/ic_claims"
         android:title="@string/claims" />
 
 </menu>
+

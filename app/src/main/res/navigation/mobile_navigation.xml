@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_policies"
         android:name="com.example.claimchapchap.ui.polices.PoliciesFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/policies"
         tools:layout="@layout/fragment_policies" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_claims"
         android:name="com.example.claimchapchap.ui.claims.ClaimsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/claims"
         tools:layout="@layout/fragment_claims" />
 </navigation>

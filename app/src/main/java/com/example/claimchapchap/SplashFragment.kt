@@ -16,9 +16,9 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-//        Handler().postDelayed({
-//            findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-//        }, 3000)
+        Handler().postDelayed({
+            findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
+        }, 3000)
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash, container, false)

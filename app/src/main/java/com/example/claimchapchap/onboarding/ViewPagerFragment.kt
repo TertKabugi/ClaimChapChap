@@ -7,7 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.claimchapchap.R
 import com.example.claimchapchap.onboarding.screens.*
-//import kotlinx.androidx.synthetic.main.fragment_view_pager.view.*
+import kotlinx.android.synthetic.main.fragment_view_pager.view.*
+
 
 class ViewPagerFragment : Fragment() {
 
@@ -25,11 +26,14 @@ class ViewPagerFragment : Fragment() {
             ScreenFour(),
             ScreenFive()
         )
+
         val adapter = ViewPagerAdapter(
             fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle
         )
+
+        view.viewPager.adapter = adapter
 
         return view
     }

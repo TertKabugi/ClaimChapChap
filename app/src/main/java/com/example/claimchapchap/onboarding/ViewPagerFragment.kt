@@ -9,7 +9,6 @@ import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentViewPagerBinding
 import com.example.claimchapchap.onboarding.screens.*
 
-
 class ViewPagerFragment : Fragment() {
 
     private lateinit var binding: FragmentViewPagerBinding

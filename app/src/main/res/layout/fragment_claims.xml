@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.polices.PoliciesFragment">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/actionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
             android:textStyle="bold"
             android:text="@string/claims"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <ScrollView
         android:layout_below="@+id/actionBar"

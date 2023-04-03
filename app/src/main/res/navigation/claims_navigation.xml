@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/claim_navigation"
+    app:startDestination="@+id/driver_one">
+
+    <fragment
+        android:id="@+id/driver_one"
+        android:name="com.example.claimchapchap.claims.pages.DriverOne"
+        tools:layout="@layout/fragment_driver_one" />
+
+    <fragment
+        android:id="@+id/driver_two"
+        android:name="com.example.claimchapchap.claims.pages.DriverTwo"
+        tools:layout="@layout/fragment_driver_two" />
+
+    <fragment
+        android:id="@+id/third_party"
+        android:name="com.example.claimchapchap.claims.pages.ThirdParty"
+        tools:layout="@layout/fragment_third_party" />
+</navigation>

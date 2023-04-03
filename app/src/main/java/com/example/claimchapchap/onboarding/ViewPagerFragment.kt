@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.claimchapchap.R
+import com.example.claimchapchap.databinding.FragmentViewPagerBinding
 import com.example.claimchapchap.onboarding.screens.*
-import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 
 class ViewPagerFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    private lateinit var binding: FragmentViewPagerBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_view_pager, container, false)
+        binding = FragmentViewPagerBinding.inflate(layoutInflater)
+        val view = binding.root
+        // val view = inflater.inflate(R.layout.fragment_view_pager, container, false)
 
         val fragmentList = arrayListOf<Fragment>(
             ScreenOne(),
@@ -33,7 +34,8 @@ class ViewPagerFragment : Fragment() {
             lifecycle
         )
 
-        view.viewPager.adapter = adapter
+        // viewPager = id
+        binding.viewPager.adapter = adapter
 
         return view
     }

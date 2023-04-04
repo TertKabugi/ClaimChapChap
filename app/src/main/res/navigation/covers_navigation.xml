@@ -4,21 +4,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/covers_navigation"
-    app:startDestination="@id/goldCoverFragment">
+    app:startDestination="@id/gold_cover">
 
     <fragment
-        android:id="@+id/goldCoverFragment"
-        android:name="com.example.claimchapchap.comprehensive.covers.GoldCoverFragment"
+        android:id="@+id/gold_cover"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.GoldCoverFragment"
         android:label="fragment_gold_cover"
-        tools:layout="@layout/fragment_gold_cover" />
+        tools:layout="@layout/fragment_comprehensive_gold" />
     <fragment
-        android:id="@+id/silverCoverFragment"
-        android:name="com.example.claimchapchap.comprehensive.covers.SilverCoverFragment"
+        android:id="@+id/silver_cover"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.SilverCoverFragment"
         android:label="fragment_silver_cover"
-        tools:layout="@layout/fragment_silver_cover" />
+        tools:layout="@layout/fragment_comprehensive_silver" />
     <fragment
-        android:id="@+id/bronzeCoverFragment"
-        android:name="com.example.claimchapchap.comprehensive.covers.BronzeCoverFragment"
+        android:id="@+id/bronze_cover"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.BronzeCoverFragment"
         android:label="fragment_bronze_cover"
-        tools:layout="@layout/fragment_bronze_cover" />
+        tools:layout="@layout/fragment_comprehensive_bronze" />
 </navigation>

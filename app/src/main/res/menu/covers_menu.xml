@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_policies"
+        android:id="@+id/navigation_gold"
         android:icon="@drawable/number_input"
         android:title="Gold" />
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_silver"
         android:icon="@drawable/number_input"
         android:title="Silver" />
 
     <item
-        android:id="@+id/navigation_claims"
+        android:id="@+id/navigation_bronze"
         android:icon="@drawable/number_input"
         android:title="Bronze" />
 

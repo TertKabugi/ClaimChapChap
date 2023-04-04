@@ -9,15 +9,15 @@
     <fragment
         android:id="@+id/driver_one"
         android:name="com.example.claimchapchap.claims.pages.DriverOne"
-        tools:layout="@layout/fragment_driver_one" />
+        tools:layout="@layout/fragment_claims_driver_one" />
 
     <fragment
         android:id="@+id/driver_two"
         android:name="com.example.claimchapchap.claims.pages.DriverTwo"
-        tools:layout="@layout/fragment_driver_two" />
+        tools:layout="@layout/fragment_claims_driver_two" />
 
     <fragment
         android:id="@+id/third_party"
         android:name="com.example.claimchapchap.claims.pages.ThirdParty"
-        tools:layout="@layout/fragment_third_party" />
+        tools:layout="@layout/fragment_claims_third_party" />
 </navigation>

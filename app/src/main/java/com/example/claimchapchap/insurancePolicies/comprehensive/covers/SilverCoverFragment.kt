@@ -1,4 +1,4 @@
-package com.example.claimchapchap.comprehensive.covers
+package com.example.claimchapchap.insurancePolicies.comprehensive.covers
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.claimchapchap.R
 
-class GoldCoverFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class SilverCoverFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +19,6 @@ class GoldCoverFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gold_cover, container, false)
+        return inflater.inflate(R.layout.fragment_comprehensive_silver, container, false)
     }
-
-
 }

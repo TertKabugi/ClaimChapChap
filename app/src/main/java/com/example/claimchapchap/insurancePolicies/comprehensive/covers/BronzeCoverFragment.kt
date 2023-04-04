@@ -1,4 +1,4 @@
-package com.example.claimchapchap.comprehensive.covers
+package com.example.claimchapchap.insurancePolicies.comprehensive.covers
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.claimchapchap.R
 
-class SilverCoverFragment : Fragment() {
+class BronzeCoverFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +19,7 @@ class SilverCoverFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_silver_cover, container, false)
+        return inflater.inflate(R.layout.fragment_comprehensive_bronze, container, false)
     }
+
 }

@@ -19,7 +19,7 @@ class DriverTwo : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_driver_two, container, false)
+        return inflater.inflate(R.layout.fragment_claims_driver_two, container, false)
     }
 
 

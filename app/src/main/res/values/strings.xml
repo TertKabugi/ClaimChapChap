@@ -44,4 +44,6 @@
     <string name="button">Button</string>
     <string name="driver_one">Driver One</string>
     <string name="driver_two">Driver Two</string>
+    <string name="comprehensive_motor_insurance_plan">Comprehensive Motor Insurance Plan</string>
+    <string name="choose_comprehensive_cover">Choose Comprehensive Cover</string>
 </resources>

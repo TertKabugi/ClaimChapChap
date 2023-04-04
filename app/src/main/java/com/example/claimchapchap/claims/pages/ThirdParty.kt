@@ -19,7 +19,7 @@ class ThirdParty : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third_party, container, false)
+        return inflater.inflate(R.layout.fragment_claims_third_party, container, false)
     }
 
 }

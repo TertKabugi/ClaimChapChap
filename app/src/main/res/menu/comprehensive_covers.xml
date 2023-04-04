@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_policies"
+        android:icon="@drawable/number_input"
+        android:title="Gold" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/number_input"
+        android:title="Silver" />
+
+    <item
+        android:id="@+id/navigation_claims"
+        android:icon="@drawable/number_input"
+        android:title="Bronze" />
+
+</menu>

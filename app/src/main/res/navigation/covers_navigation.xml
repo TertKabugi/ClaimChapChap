@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/covers_navigation"
+    app:startDestination="@id/goldCoverFragment">
+
+    <fragment
+        android:id="@+id/goldCoverFragment"
+        android:name="com.example.claimchapchap.comprehensive.covers.GoldCoverFragment"
+        android:label="fragment_gold_cover"
+        tools:layout="@layout/fragment_gold_cover" />
+    <fragment
+        android:id="@+id/silverCoverFragment"
+        android:name="com.example.claimchapchap.comprehensive.covers.SilverCoverFragment"
+        android:label="fragment_silver_cover"
+        tools:layout="@layout/fragment_silver_cover" />
+    <fragment
+        android:id="@+id/bronzeCoverFragment"
+        android:name="com.example.claimchapchap.comprehensive.covers.BronzeCoverFragment"
+        android:label="fragment_bronze_cover"
+        tools:layout="@layout/fragment_bronze_cover" />
+</navigation>

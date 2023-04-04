@@ -46,4 +46,6 @@
     <string name="driver_two">Driver Two</string>
     <string name="comprehensive_motor_insurance_plan">Comprehensive Motor Insurance Plan</string>
     <string name="choose_comprehensive_cover">Choose Comprehensive Cover</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

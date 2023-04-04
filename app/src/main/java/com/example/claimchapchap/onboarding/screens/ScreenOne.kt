@@ -1,22 +1,35 @@
 package com.example.claimchapchap.onboarding.screens
 
+import android.content.Intent
+import android.os.Binder
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import com.example.claimchapchap.R
+import com.example.claimchapchap.databinding.FragmentScreenOneBinding
 
 class ScreenOne : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    private lateinit var binding: FragmentScreenOneBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_screen_one, container, false)
+
+        binding = FragmentScreenOneBinding.inflate(layoutInflater)
+        val view = binding.root
+
+        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+        view.findViewById<Button>(R.id.btnNext).setOnClickListener{
+            viewPager?.currentItem = 1
+        }
 
 
+        return view
     }
 
 }

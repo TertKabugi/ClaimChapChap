@@ -11,7 +11,7 @@
         android:id="@+id/welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="@color/red"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="First Name" />
+                android:text="@string/first_name" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -57,7 +57,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Second Name" />
+                android:text="@string/second_name" />
         </LinearLayout>
 
         <EditText
@@ -68,7 +68,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Email Address"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -78,7 +78,7 @@
             android:layout_below="@+id/editTextPhone"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword" />
 
         <EditText
@@ -88,7 +88,7 @@
             android:layout_below="@+id/etPassword"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Confirm Password"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword" />
 
         <Button
@@ -99,7 +99,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
-            android:text="Sign Up" />
+            android:text="@string/sign_up" />
 
         <EditText
             android:id="@+id/editTextPhone"
@@ -108,7 +108,7 @@
             android:layout_below="@+id/editTextTextEmailAddress"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="Phone Number"
+            android:hint="@string/phone_number"
             android:inputType="phone" />
 
 
@@ -166,14 +166,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Don't have an account?" />
+            android:text="@string/don_t_have_an_account" />
 
         <TextView
             android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="@color/blue" />
     </LinearLayout>
 

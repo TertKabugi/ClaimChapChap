@@ -48,4 +48,12 @@
     <string name="choose_comprehensive_cover">Choose Comprehensive Cover</string>
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
 </resources>

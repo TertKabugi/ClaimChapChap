@@ -11,7 +11,7 @@
         android:id="@+id/welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
+        android:text="@string/welcome_back"
         android:textColor="@color/red"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -41,7 +41,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="30dp"
             android:ems="10"
-            android:hint="Email Address"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -51,7 +51,7 @@
             android:layout_below="@+id/editTextTextEmailAddress"
             android:layout_marginTop="40dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
-            android:text="Forgot Password?"
+            android:text="@string/forgot_password"
             android:textColor="@color/black"
             android:textSize="15sp" />
 
@@ -74,7 +74,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
-            android:text="Login" />
+            android:text="@string/login" />
 
 
     </RelativeLayout>
@@ -83,7 +83,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Or log in with social media"
+        android:text="@string/or_sign_up_with_social_media"
         android:layout_marginTop="100dp"
         android:textSize="20sp"
         android:textColor="@color/blue"
@@ -100,20 +100,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/derash" />
+            android:src="@drawable/facebook" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_marginStart="40dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/derash" />
+            android:src="@drawable/google"/>
     </LinearLayout>
 
     <LinearLayout
@@ -131,14 +131,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Don't have an account?" />
+            android:text="@string/don_t_have_an_account" />
 
         <TextView
             android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="@color/blue" />
     </LinearLayout>
 

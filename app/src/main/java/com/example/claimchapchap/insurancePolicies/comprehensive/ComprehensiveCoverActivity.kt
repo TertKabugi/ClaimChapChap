@@ -32,7 +32,7 @@ class ComprehensiveCoverActivity : AppCompatActivity() {
 
         val btnNext: Button = binding.btnNext
         btnNext.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@ComprehensiveCoverActivity, ComprehensiveQuoteActivity::class.java))
+            startActivity(Intent(this@ComprehensiveCoverActivity, CoverFragment::class.java))
         })
     }
 }

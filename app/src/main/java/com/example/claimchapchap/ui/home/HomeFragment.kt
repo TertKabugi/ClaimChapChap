@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -17,23 +19,29 @@ class HomeFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this)[HomeViewModel::class.java]
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val view: View = binding.root
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-        return root
+        val comprehensive = binding.rlComprehensive
+        comprehensive.setOnClickListener{
+            findNavController()
+        }
+
+        val tpft = binding.rlTPFT
+        tpft.setOnClickListener{}
+
+        val thirdParty = binding.thirdParty
+        thirdParty.setOnClickListener{}
+
+        val actOnly = binding.rlActOnly
+        actOnly.setOnClickListener{}
+
+
+        return view
     }
 
     override fun onDestroyView() {

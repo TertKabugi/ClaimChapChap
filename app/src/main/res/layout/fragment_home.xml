@@ -136,7 +136,8 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@drawable/derash" />
+                android:src="@drawable/derash"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/comprehensive"
@@ -179,7 +180,8 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@drawable/derash" />
+                android:src="@drawable/derash"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/tpft"
@@ -221,7 +223,8 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@drawable/derash" />
+                android:src="@drawable/derash"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/thirdParty"
@@ -264,7 +267,8 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                tools:src="@drawable/derash" />
+                android:src="@drawable/derash"
+                android:contentDescription="@string/todo"/>
 
             <TextView
                 android:id="@+id/actOnly"
@@ -291,7 +295,5 @@
         </RelativeLayout>
 
     </RelativeLayout>
-
-
 
 </RelativeLayout>

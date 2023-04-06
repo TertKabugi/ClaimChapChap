@@ -27,9 +27,7 @@ class HomeFragment : Fragment() {
         val view: View = binding.root
 
         val comprehensive = binding.rlComprehensive
-        comprehensive.setOnClickListener{
-            findNavController()
-        }
+        comprehensive.setOnClickListener{}
 
         val tpft = binding.rlTPFT
         tpft.setOnClickListener{}

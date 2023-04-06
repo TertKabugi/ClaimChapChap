@@ -85,4 +85,5 @@
     <string name="account_name">Account Name</string>
     <string name="card_payment">Card Payment</string>
     <string name="mobile_payment">Mobile Payment</string>
+    <string name="username">Username</string>
 </resources>

@@ -21,13 +21,10 @@ class ScreenThree : Fragment() {
         val view = binding.root
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
-        view.findViewById<Button>(R.id.btnNext).setOnClickListener{
+        val skip = binding.skip
+        skip.setOnClickListener{
             viewPager?.currentItem = 3
         }
-        view.findViewById<Button>(R.id.btnPrev).setOnClickListener{
-            viewPager?.currentItem = 3
-        }
-
         return view
     }
 

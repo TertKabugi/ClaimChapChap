@@ -3,6 +3,7 @@ package com.example.claimchapchap.onboarding.screens
 import android.content.Intent
 import android.os.Binder
 import android.os.Bundle
+import android.text.Layout
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,11 +25,10 @@ class ScreenOne : Fragment() {
         val view = binding.root
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
-        view.findViewById<Button>(R.id.btnNext).setOnClickListener{
+        val skip = binding.skip
+        skip.setOnClickListener{
             viewPager?.currentItem = 1
         }
-
-
         return view
     }
 

@@ -26,6 +26,7 @@
         android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:textSize="25sp"
+        android:textColor="@color/blue"
         android:text="As a motorist we know you face risk on the road but with our insurance we’ve got you covered"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.534"

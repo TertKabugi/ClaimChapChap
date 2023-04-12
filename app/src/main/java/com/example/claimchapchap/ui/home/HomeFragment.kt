@@ -38,16 +38,15 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentTPFT)
         }
 
-        val thirdParty = binding.thirdParty
+        val thirdParty = binding.rlThirdParty
         thirdParty.setOnClickListener{
-            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentTPFT)
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentThirdParty)
         }
 
         val actOnly = binding.rlActOnly
         actOnly.setOnClickListener{
-            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentThirdParty)
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentActOnly)
         }
-
 
         return view
     }

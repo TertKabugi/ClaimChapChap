@@ -25,7 +25,7 @@ class VehicleDetailsFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_vehicleDetailsFragment2_to_coverFragment2)
+            findNavController().navigate(R.id.action_vehicleDetailsFragment_to_comprehensiveCoverActivity)
         }
 
         return view

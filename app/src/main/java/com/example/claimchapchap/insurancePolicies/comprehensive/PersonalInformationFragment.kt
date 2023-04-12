@@ -25,7 +25,9 @@ class PersonalInformationFragment : Fragment() {
         val view = binding.root
 
         val next: Button = binding.btnNext
-
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_personalInformationFragmentComprehensive_to_vehicleDetailsFragment)
+        }
 
         return view
     }

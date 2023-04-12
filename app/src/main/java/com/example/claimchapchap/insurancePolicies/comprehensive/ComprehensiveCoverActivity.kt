@@ -30,9 +30,5 @@ class ComprehensiveCoverActivity : AppCompatActivity() {
         )
         navigation.setupWithNavController(navController)
 
-        val btnNext: Button = binding.btnNext
-        btnNext.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@ComprehensiveCoverActivity, CoverFragment::class.java))
-        })
     }
 }

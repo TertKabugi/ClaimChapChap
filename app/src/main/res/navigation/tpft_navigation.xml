@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tpft_navigation"
+    app:startDestination="@id/personalInformationFragment">
+    <fragment
+        android:id="@+id/personalInformationFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
+        android:label="fragment_tpft_personal_information"
+        tools:layout="@layout/fragment_tpft_personal_information" >
+        <action
+            android:id="@+id/action_personalInformationFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailsFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.VehicleDetailsFragment"
+        android:label="fragment_tpft_vehicle_details"
+        tools:layout="@layout/fragment_tpft_vehicle_details" />
+</navigation>

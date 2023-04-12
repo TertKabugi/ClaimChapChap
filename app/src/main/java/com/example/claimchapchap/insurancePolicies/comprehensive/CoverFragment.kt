@@ -30,12 +30,9 @@ class CoverFragment : Fragment() {
                 R.id.gold_cover, R.id.silver_cover, R.id.bronze_cover
             )
         )
-//        navigation.setupWithNavController()
+        //navigation.setupWithNavController(navController)
 
-        val btnNext: Button = binding.btnNext
-        btnNext.setOnClickListener{
-            findNavController().navigate(R.id.action_coverFragment_to_quoteFragment2)
-        }
+
 
         return view
     }

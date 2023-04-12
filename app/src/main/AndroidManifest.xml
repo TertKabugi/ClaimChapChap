@@ -13,12 +13,47 @@
         android:theme="@style/Theme.ClaimChapChap"
         tools:targetApi="33">
         <activity
-            android:name=".ComprehensiveActivity"
+            android:name=".insurancePolicies.comprehensive.ComprehensiveCoverActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".ActOnlyMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ThirdPartyMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TPFTMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ComprehensiveMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+<!--        <activity-->
+<!--            android:name=".ComprehensiveActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity> -->
         <!-- <activity -->
         <!-- android:name=".Payment" -->
         <!-- android:exported="false"> -->

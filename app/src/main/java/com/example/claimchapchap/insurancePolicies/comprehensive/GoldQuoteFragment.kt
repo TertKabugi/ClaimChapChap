@@ -6,25 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.navigation.fragment.findNavController
-import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.FragmentComprehensiveQuoteBinding
+import com.example.claimchapchap.databinding.FragmentComprehensiveGoldQuoteBinding
 
-class QuoteFragment : Fragment() {
+class GoldQuoteFragment : Fragment() {
 
-    private lateinit var binding: FragmentComprehensiveQuoteBinding
+    private lateinit var binding: FragmentComprehensiveGoldQuoteBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
 
-        binding = FragmentComprehensiveQuoteBinding.inflate(layoutInflater)
+        binding = FragmentComprehensiveGoldQuoteBinding.inflate(layoutInflater)
         val view = binding.root
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_quoteFragment2_to_paymentFragment4)
+            //findNavController().navigate(R.id.action_quoteFragment_to_paymentFragment)
         }
         return view
     }

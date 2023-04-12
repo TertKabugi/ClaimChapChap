@@ -86,4 +86,8 @@
     <string name="card_payment">Card Payment</string>
     <string name="mobile_payment">Mobile Payment</string>
     <string name="username">Username</string>
+    <string name="act_only_motor_insurance_plan">Act Only Motor Insurance Plan</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="bronze">Bronze</string>
 </resources>

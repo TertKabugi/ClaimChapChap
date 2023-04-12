@@ -10,15 +10,42 @@
         android:id="@+id/gold_cover"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.GoldCoverFragment"
         android:label="fragment_gold_cover"
-        tools:layout="@layout/fragment_comprehensive_gold" />
+        tools:layout="@layout/fragment_comprehensive_gold" >
+        <action
+            android:id="@+id/action_gold_cover_to_goldQuoteFragment"
+            app:destination="@id/comprehensiveGoldQuoteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/silver_cover"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.SilverCoverFragment"
         android:label="fragment_silver_cover"
-        tools:layout="@layout/fragment_comprehensive_silver" />
+        tools:layout="@layout/fragment_comprehensive_silver" >
+        <action
+            android:id="@+id/action_silver_cover_to_silverQuoteFragment"
+            app:destination="@id/comprehensiveSilverQuoteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/bronze_cover"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.covers.BronzeCoverFragment"
         android:label="fragment_bronze_cover"
-        tools:layout="@layout/fragment_comprehensive_bronze" />
+        tools:layout="@layout/fragment_comprehensive_bronze" >
+        <action
+            android:id="@+id/action_bronze_cover_to_bronzeQuoteFragment"
+            app:destination="@id/comprehensiveBronzeQuoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comprehensiveGoldQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
+        android:label="fragment_comprehensive_gold_quote"
+        tools:layout="@layout/fragment_comprehensive_gold_quote" />
+    <fragment
+        android:id="@+id/comprehensiveBronzeQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.BronzeQuoteFragment"
+        android:label="fragment_comprehensive_bronze_quote"
+        tools:layout="@layout/fragment_comprehensive_bronze_quote" />
+    <fragment
+        android:id="@+id/comprehensiveSilverQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.SilverQuoteFragment"
+        android:label="fragment_comprehensive_silver_quote"
+        tools:layout="@layout/fragment_comprehensive_silver_quote" />
 </navigation>

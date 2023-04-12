@@ -5,16 +5,16 @@
     <item
         android:id="@+id/navigation_gold"
         android:icon="@drawable/number_input"
-        android:title="Gold" />
+        android:title="@string/gold" />
 
     <item
         android:id="@+id/navigation_silver"
         android:icon="@drawable/number_input"
-        android:title="Silver" />
+        android:title="@string/silver" />
 
     <item
         android:id="@+id/navigation_bronze"
         android:icon="@drawable/number_input"
-        android:title="Bronze" />
+        android:title="@string/bronze" />
 
 </menu>

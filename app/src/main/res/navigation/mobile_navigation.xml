@@ -11,19 +11,18 @@
         android:name="com.example.claimchapchap.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
-
         <action
             android:id="@+id/action_navigation_home_to_personalInformationFragmentComprehensive"
-            app:destination="@id/personalInformationFragmentComprehensive" />
-        <action
-            android:id="@+id/action_navigation_home_to_personalInformationFragmentActOnly"
-            app:destination="@id/personalInformationFragmentActOnly" />
-        <action
-            android:id="@+id/action_navigation_home_to_personalInformationFragmentThirdParty"
-            app:destination="@id/personalInformationFragmentThirdParty" />
+            app:destination="@id/comprehensiveMain" />
         <action
             android:id="@+id/action_navigation_home_to_personalInformationFragmentTPFT"
-            app:destination="@id/personalInformationFragmentTPFT" />
+            app:destination="@id/TPFTMainActivity" />
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentThirdParty"
+            app:destination="@id/thirdPartyMainActivity" />
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentActOnly"
+            app:destination="@id/actOnlyMainActivity" />
     </fragment>
 
     <fragment
@@ -58,29 +57,44 @@
         tools:layout="@layout/fragment_comprehensive_payment" />
     <fragment
         android:id="@+id/quoteFragment2"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.QuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
         android:label="fragment_comprehensive_quote"
-        tools:layout="@layout/fragment_comprehensive_quote" >
+        tools:layout="@layout/fragment_comprehensive_gold_quote" >
 
     </fragment>
     <fragment
-        android:id="@+id/personalInformationFragmentComprehensive"
-        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
-        android:label="PersonalInformationFragment"
-        tools:layout="@layout/fragment_comprehensive_personal_information"/>
-    <fragment
-        android:id="@+id/personalInformationFragmentActOnly"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PersonalInformationFragment"
-        android:label="actonly"
-        tools:layout="@layout/fragment_actonly_personal_information" />
-    <fragment
-        android:id="@+id/personalInformationFragmentThirdParty"
-        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
-        android:label="PersonalInformationFragment"
-        tools:layout="@layout/fragment_thirdparty_personal_information"/>
-    <fragment
         android:id="@+id/personalInformationFragmentTPFT"
         android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
-        android:label="PersonalInformationFragment"
-        tools:layout="@layout/fragment_tpft_personal_information"/>
+        android:label="fragment_tpft_personal_information"
+        tools:layout="@layout/fragment_tpft_personal_information" />
+    <fragment
+        android:id="@+id/personalInformationFragmentThirdParty"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.PersonalInformationFragment"
+        android:label="fragment_thirdparty_personal_information"
+        tools:layout="@layout/fragment_thirdparty_personal_information" />
+    <fragment
+        android:id="@+id/personalInformationFragmentActOnly"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.PersonalInformationFragment"
+        android:label="fragment_actonly_personal_information"
+        tools:layout="@layout/fragment_actonly_personal_information" />
+    <activity
+        android:id="@+id/comprehensiveMain"
+        android:name="com.example.claimchapchap.ComprehensiveMainActivity"
+        android:label="activity_comprehensive_main"
+        tools:layout="@layout/activity_comprehensive_main" />
+    <activity
+        android:id="@+id/thirdPartyMainActivity"
+        android:name="com.example.claimchapchap.ThirdPartyMainActivity"
+        android:label="activity_third_party_main"
+        tools:layout="@layout/activity_third_party_main" />
+    <activity
+        android:id="@+id/actOnlyMainActivity"
+        android:name="com.example.claimchapchap.ActOnlyMainActivity"
+        android:label="activity_act_only_main"
+        tools:layout="@layout/activity_act_only_main" />
+    <activity
+        android:id="@+id/TPFTMainActivity"
+        android:name="com.example.claimchapchap.TPFTMainActivity"
+        android:label="activity_tpft_main"
+        tools:layout="@layout/activity_tpft_main" />
 </navigation>

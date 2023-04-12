@@ -10,7 +10,21 @@
         android:id="@+id/navigation_home"
         android:name="com.example.claimchapchap.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentComprehensive"
+            app:destination="@id/personalInformationFragmentComprehensive" />
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentActOnly"
+            app:destination="@id/personalInformationFragmentActOnly" />
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentThirdParty"
+            app:destination="@id/personalInformationFragmentThirdParty" />
+        <action
+            android:id="@+id/action_navigation_home_to_personalInformationFragmentTPFT"
+            app:destination="@id/personalInformationFragmentTPFT" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_policies"
@@ -23,4 +37,50 @@
         android:name="com.example.claimchapchap.ui.claims.ClaimsFragment"
         android:label="@string/claims"
         tools:layout="@layout/fragment_claims" />
+    <fragment
+        android:id="@+id/vehicleDetailsFragment2"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.VehicleDetailsFragment"
+        android:label="fragment_comprehensive_vehicle_details"
+        tools:layout="@layout/fragment_comprehensive_vehicle_details" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/coverFragment2"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.CoverFragment"
+        android:label="fragment_comprehensive_cover"
+        tools:layout="@layout/fragment_comprehensive_cover" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PaymentFragment"
+        android:label="fragment_comprehensive_payment"
+        tools:layout="@layout/fragment_comprehensive_payment" />
+    <fragment
+        android:id="@+id/quoteFragment2"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.QuoteFragment"
+        android:label="fragment_comprehensive_quote"
+        tools:layout="@layout/fragment_comprehensive_quote" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/personalInformationFragmentComprehensive"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
+        android:label="PersonalInformationFragment"
+        tools:layout="@layout/fragment_comprehensive_personal_information"/>
+    <fragment
+        android:id="@+id/personalInformationFragmentActOnly"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PersonalInformationFragment"
+        android:label="actonly"
+        tools:layout="@layout/fragment_actonly_personal_information" />
+    <fragment
+        android:id="@+id/personalInformationFragmentThirdParty"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
+        android:label="PersonalInformationFragment"
+        tools:layout="@layout/fragment_thirdparty_personal_information"/>
+    <fragment
+        android:id="@+id/personalInformationFragmentTPFT"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
+        android:label="PersonalInformationFragment"
+        tools:layout="@layout/fragment_tpft_personal_information"/>
 </navigation>

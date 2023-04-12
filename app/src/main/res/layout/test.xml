@@ -31,89 +31,115 @@
         app:layout_constraintTop_toBottomOf="@+id/welcome">
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nameTil"
+        <LinearLayout
+            android:id="@+id/carLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            app:layout_constraintTop_toBottomOf="parent"
             android:layout_marginTop="0dp">
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/carMakeTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/carMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/car_make"
+                    android:inputType="text"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/carModelTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/carModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/car_model"
+                    android:inputType="date"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yomTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carLayout"
+            android:layout_marginTop="20dp">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/yearOfManufacture"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/first_name"
+                android:hint="@string/year_of_manufacture"
+                android:inputType="date"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dopTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yomTil"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateOfPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/date_of_purchase"
+                android:inputType="date"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valuationTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dopTil"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/carValuation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/car_s_current_valuation"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailTil"
+            android:id="@+id/numberPlateTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nameTil"
+            android:layout_below="@+id/valuationTil"
             android:layout_marginTop="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmailAddress"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="@string/email_address"
-                android:inputType="text"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="12dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/numberTil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/emailTil"
-            android:layout_marginTop="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPhoneNumber"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="@string/phone_number"
-                android:inputType="text"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="12dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/passwordTil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/numberTil"
-            android:layout_marginTop="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPassword"
+                android:id="@+id/numberPlate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/password"
-                android:inputType="text"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="12dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/cPasswordTil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/passwordTil"
-            android:layout_marginTop="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:hint="@string/confirm_password"
+                android:hint="@string/number_plate"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
@@ -123,11 +149,11 @@
             android:id="@+id/btnSignUp"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:layout_below="@+id/cPasswordTil"
+            android:layout_below="@+id/numberPlateTil"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
-            android:text="@string/sign_up" />
+            android:text="@string/next" />
     </RelativeLayout>
 
     <TextView

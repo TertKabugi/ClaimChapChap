@@ -1,5 +1,6 @@
 package com.example.claimchapchap.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentHomeBinding
+import com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveMainFragment
 
 class HomeFragment : Fragment() {
 
@@ -27,16 +29,24 @@ class HomeFragment : Fragment() {
         val view: View = binding.root
 
         val comprehensive = binding.rlComprehensive
-        comprehensive.setOnClickListener{}
+        comprehensive.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentComprehensive)
+        }
 
         val tpft = binding.rlTPFT
-        tpft.setOnClickListener{}
+        tpft.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentTPFT)
+        }
 
         val thirdParty = binding.thirdParty
-        thirdParty.setOnClickListener{}
+        thirdParty.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentTPFT)
+        }
 
         val actOnly = binding.rlActOnly
-        actOnly.setOnClickListener{}
+        actOnly.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentThirdParty)
+        }
 
 
         return view

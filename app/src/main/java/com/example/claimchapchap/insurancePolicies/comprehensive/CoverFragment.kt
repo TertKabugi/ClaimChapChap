@@ -33,7 +33,9 @@ class CoverFragment : Fragment() {
 //        navigation.setupWithNavController()
 
         val btnNext: Button = binding.btnNext
-        btnNext.setOnClickListener{}
+        btnNext.setOnClickListener{
+            findNavController().navigate(R.id.action_coverFragment_to_quoteFragment2)
+        }
 
         return view
     }

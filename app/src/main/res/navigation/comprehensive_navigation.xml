@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/comprehensive_navigation"
-    app:startDestination="@id/personalInformationFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/vehicleDetailsFragment"
@@ -49,6 +49,15 @@
         <action
             android:id="@+id/action_personalInformationFragment_to_vehicleDetailsFragment"
             app:destination="@id/vehicleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.claimchapchap.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_personalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
     </fragment>
 
 </navigation>

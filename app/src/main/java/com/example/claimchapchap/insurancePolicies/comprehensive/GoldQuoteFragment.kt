@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import androidx.navigation.fragment.findNavController
+import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensiveGoldQuoteBinding
 
 class GoldQuoteFragment : Fragment() {
@@ -20,9 +23,13 @@ class GoldQuoteFragment : Fragment() {
         binding = FragmentComprehensiveGoldQuoteBinding.inflate(layoutInflater)
         val view = binding.root
 
+        val back: ImageView = binding.backIcon
+        back.setOnClickListener{
+            findNavController().navigate(R.id.action_goldQuoteFragment_to_comprehensiveCoverActivity)
+        }
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            //findNavController().navigate(R.id.action_quoteFragment_to_paymentFragment)
+            findNavController().navigate(R.id.action_goldQuoteFragment_to_paymentFragment)
         }
         return view
     }

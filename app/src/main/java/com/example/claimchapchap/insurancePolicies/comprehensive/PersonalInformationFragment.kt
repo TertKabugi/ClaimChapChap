@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensivePersonalInformationBinding
@@ -24,10 +26,16 @@ class PersonalInformationFragment : Fragment() {
         binding = FragmentComprehensivePersonalInformationBinding.inflate(layoutInflater)
         val view = binding.root
 
+
+        val back: ImageView = binding.backIcon
+        back.setOnClickListener{
+            findNavController().navigate(R.id.action_personalInformationFragmentComprehensive_to_homeFragment)
+        }
         val next: Button = binding.btnNext
         next.setOnClickListener{
             findNavController().navigate(R.id.action_personalInformationFragmentComprehensive_to_vehicleDetailsFragment)
         }
+
 
         return view
     }

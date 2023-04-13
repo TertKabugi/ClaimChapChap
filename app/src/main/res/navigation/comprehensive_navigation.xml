@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/test"
@@ -8,11 +9,14 @@
     <fragment
         android:id="@+id/personalInformationFragmentComprehensive"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PersonalInformationFragment"
-        android:label="fragment_comprehensive_personal_information"
+        android:label="@string/comprehensive_motor_insurance_plan"
         tools:layout="@layout/fragment_comprehensive_personal_information" >
         <action
             android:id="@+id/action_personalInformationFragmentComprehensive_to_vehicleDetailsFragment"
             app:destination="@id/vehicleDetailsFragment" />
+        <action
+            android:id="@+id/action_personalInformationFragmentComprehensive_to_homeFragment"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/vehicleDetailsFragment"
@@ -22,6 +26,9 @@
         <action
             android:id="@+id/action_vehicleDetailsFragment_to_comprehensiveCoverActivity"
             app:destination="@id/comprehensiveCoverActivity" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragmentComprehensive"
+            app:destination="@id/personalInformationFragmentComprehensive" />
     </fragment>
     <fragment
         android:id="@+id/quoteFragment"
@@ -29,13 +36,17 @@
         android:label="fragment_comprehensive_quote"
         tools:layout="@layout/fragment_comprehensive_gold_quote" />
     <fragment
-        android:id="@+id/paymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PaymentFragment"
+        android:id="@+id/bronzePaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldPaymentFragment"
         android:label="fragment_comprehensive_payment"
-        tools:layout="@layout/fragment_comprehensive_payment" />
+        tools:layout="@layout/fragment_comprehensive_gold_payment" />
     <activity
         android:id="@+id/comprehensiveCoverActivity"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"
         android:label="activity_comprehensive_cover"
         tools:layout="@layout/activity_comprehensive_cover" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
 </navigation>

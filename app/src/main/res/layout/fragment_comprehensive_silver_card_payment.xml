@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".insurancePolicies.comprehensive.payment.MobilePaymentFragment">
+    tools:context=".insurancePolicies.comprehensive.payment.GoldCardPaymentFragment">
 
     <RelativeLayout
         android:id="@+id/actionBar"
@@ -20,7 +20,8 @@
             android:id="@+id/backIcon"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/tvPolicies"
@@ -40,10 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Please Enter Payment Details"
-        android:layout_marginTop="10dp"
+        android:text="Please Enter your Card Details"
+        android:layout_marginTop="20dp"
         android:textColor="@color/red"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,54 +61,53 @@
         app:layout_constraintTop_toBottomOf="@+id/welcome">
 
         <EditText
-            android:id="@+id/etPayBill"
+            android:id="@+id/etCardNumber"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
-            android:hint="@string/paybill_number"
+            android:ems="10"
+            android:hint="@string/card_number"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/etAccountName"
+            android:id="@+id/etHolderName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/etPayBill"
-            android:layout_marginTop="50dp"
+            android:layout_below="@+id/etCardNumber"
+            android:layout_marginTop="40dp"
             android:ems="10"
-            android:hint="@string/account_name"
+            android:hint="@string/card_holder_name"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/etHolderName"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/expiry_date"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/etPremiumAmount"
+            android:id="@+id/etCVV"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/etAccountName"
-            android:layout_marginTop="50dp"
+            android:layout_below="@+id/etExpiryDate"
+            android:layout_marginTop="40dp"
             android:ems="10"
-            android:hint="@string/premium_amount"
-            android:inputType="text" />
-
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/etPremiumAmount"
-            android:layout_marginTop="60dp"
-            android:gravity="center"
-            android:text="Once you click next you will be prompted to input your M-Pesa PIN please do so accordingly"
-            android:textSize="20sp"
-            android:textColor="@color/blue"/>
+            android:hint="@string/cvv_number"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="250dp"
             android:layout_height="60dp"
-            android:layout_below="@+id/textView14"
+            android:layout_below="@+id/etCVV"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="80dp"
-            android:layout_marginEnd="47dp"
+            android:layout_marginEnd="50dp"
             android:text="@string/next" />
     </RelativeLayout>
 

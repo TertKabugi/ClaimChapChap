@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".insurancePolicies.comprehensive.payment.CardPaymentFragment">
+    tools:context=".insurancePolicies.comprehensive.payment.GoldCardPaymentFragment">
 
     <RelativeLayout
         android:id="@+id/actionBar"
@@ -20,7 +20,8 @@
             android:id="@+id/backIcon"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/tvPolicies"
@@ -88,7 +89,6 @@
             android:ems="10"
             android:hint="@string/expiry_date"
             android:inputType="date" />
-
 
         <EditText
             android:id="@+id/etCVV"

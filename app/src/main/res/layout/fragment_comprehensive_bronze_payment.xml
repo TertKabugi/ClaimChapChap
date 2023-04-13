@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".insurancePolicies.comprehensive.PaymentFragment">
+    tools:context=".insurancePolicies.comprehensive.GoldPaymentFragment">
 
 
     <RelativeLayout
@@ -21,7 +21,8 @@
             android:id="@+id/backIcon"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/tvPolicies"
@@ -50,42 +51,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:background="@drawable/number_input"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_marginTop="60dp"
-        android:hint="@string/mobile_payment"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:background="@drawable/number_input"
         android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:hint="@string/card_payment"
-        android:textSize="30sp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/mobilePayment"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/number_input"
+            android:hint="@string/mobile_payment"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/cardPayment"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/number_input"
+            android:hint="@string/card_payment"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobilePayment" />
+    </RadioGroup>
+
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnNext"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:text="@string/next"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

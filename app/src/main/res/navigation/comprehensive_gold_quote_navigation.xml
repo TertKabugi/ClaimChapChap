@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test"
+    app:startDestination="@id/goldQuoteFragment">
+
+    <fragment
+        android:id="@+id/goldQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
+        android:label="fragment_comprehensive_gold_quote"
+        tools:layout="@layout/fragment_comprehensive_gold_quote" >
+        <action
+            android:id="@+id/action_goldQuoteFragment_to_paymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+        <action
+            android:id="@+id/action_goldQuoteFragment_to_comprehensiveCoverActivity"
+            app:destination="@id/comprehensiveCoverActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldPaymentFragment"
+        android:label="fragment_comprehensive_payment"
+        tools:layout="@layout/fragment_comprehensive_gold_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_mobilePaymentFragment"
+            app:destination="@id/goldMobilePaymentFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_cardPaymentFragment"
+            app:destination="@id/bronzeCardPaymentFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_goldQuoteFragment"
+            app:destination="@id/goldQuoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldMobilePaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldMobilePaymentFragment"
+        android:label="fragment_comprehensive_mobile_payment"
+        tools:layout="@layout/fragment_comprehensive_gold_mobile_payment" >
+        <action
+            android:id="@+id/action_mobilePaymentFragment_to_paymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeCardPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldCardPaymentFragment"
+        android:label="fragment_comprehensive_card_payment"
+        tools:layout="@layout/fragment_comprehensive_gold_card_payment" >
+        <action
+            android:id="@+id/action_cardPaymentFragment_to_paymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/comprehensiveCoverActivity"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"
+        android:label="activity_comprehensive_cover"
+        tools:layout="@layout/activity_comprehensive_cover" />
+</navigation>

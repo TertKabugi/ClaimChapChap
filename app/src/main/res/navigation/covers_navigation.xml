@@ -12,8 +12,8 @@
         android:label="fragment_gold_cover"
         tools:layout="@layout/fragment_comprehensive_gold" >
         <action
-            android:id="@+id/action_gold_cover_to_goldQuoteFragment"
-            app:destination="@id/comprehensiveGoldQuoteFragment" />
+            android:id="@+id/action_gold_cover_to_comprehensiveGoldQuoteActivity"
+            app:destination="@id/comprehensiveGoldQuoteActivity" />
     </fragment>
     <fragment
         android:id="@+id/silver_cover"
@@ -21,8 +21,8 @@
         android:label="fragment_silver_cover"
         tools:layout="@layout/fragment_comprehensive_silver" >
         <action
-            android:id="@+id/action_silver_cover_to_silverQuoteFragment"
-            app:destination="@id/comprehensiveSilverQuoteFragment" />
+            android:id="@+id/action_silver_cover_to_comprehensiveSilverQuote"
+            app:destination="@id/comprehensiveSilverQuote" />
     </fragment>
     <fragment
         android:id="@+id/bronze_cover"
@@ -30,22 +30,22 @@
         android:label="fragment_bronze_cover"
         tools:layout="@layout/fragment_comprehensive_bronze" >
         <action
-            android:id="@+id/action_bronze_cover_to_bronzeQuoteFragment"
-            app:destination="@id/comprehensiveBronzeQuoteFragment" />
+            android:id="@+id/action_bronze_cover_to_comprehensiveBronzeQuote"
+            app:destination="@id/comprehensiveBronzeQuote" />
     </fragment>
-    <fragment
-        android:id="@+id/comprehensiveGoldQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
-        android:label="fragment_comprehensive_gold_quote"
-        tools:layout="@layout/fragment_comprehensive_gold_quote" />
-    <fragment
-        android:id="@+id/comprehensiveBronzeQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.BronzeQuoteFragment"
-        android:label="fragment_comprehensive_bronze_quote"
-        tools:layout="@layout/fragment_comprehensive_bronze_quote" />
-    <fragment
-        android:id="@+id/comprehensiveSilverQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.SilverQuoteFragment"
-        android:label="fragment_comprehensive_silver_quote"
-        tools:layout="@layout/fragment_comprehensive_silver_quote" />
+    <activity
+        android:id="@+id/comprehensiveGoldQuoteActivity"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.ComprehensiveGoldQuote"
+        android:label="activity_comprehensive_gold_quote"
+        tools:layout="@layout/activity_comprehensive_gold_quote" />
+    <activity
+        android:id="@+id/comprehensiveSilverQuote"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.ComprehensiveSilverQuote"
+        android:label="activity_comprehensive_silver_quote"
+        tools:layout="@layout/activity_comprehensive_silver_quote" />
+    <activity
+        android:id="@+id/comprehensiveBronzeQuote"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.ComprehensiveBronzeQuote"
+        android:label="activity_comprehensive_bronze_quote"
+        tools:layout="@layout/activity_comprehensive_bronze_quote" />
 </navigation>

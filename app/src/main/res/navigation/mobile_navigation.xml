@@ -36,47 +36,6 @@
         android:name="com.example.claimchapchap.ui.claims.ClaimsFragment"
         android:label="@string/claims"
         tools:layout="@layout/fragment_claims" />
-    <fragment
-        android:id="@+id/vehicleDetailsFragment2"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.VehicleDetailsFragment"
-        android:label="fragment_comprehensive_vehicle_details"
-        tools:layout="@layout/fragment_comprehensive_vehicle_details" >
-
-    </fragment>
-    <fragment
-        android:id="@+id/coverFragment2"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.CoverFragment"
-        android:label="fragment_comprehensive_cover"
-        tools:layout="@layout/fragment_comprehensive_cover" >
-
-    </fragment>
-    <fragment
-        android:id="@+id/paymentFragment4"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.PaymentFragment"
-        android:label="fragment_comprehensive_payment"
-        tools:layout="@layout/fragment_comprehensive_payment" />
-    <fragment
-        android:id="@+id/quoteFragment2"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
-        android:label="fragment_comprehensive_quote"
-        tools:layout="@layout/fragment_comprehensive_gold_quote" >
-
-    </fragment>
-    <fragment
-        android:id="@+id/personalInformationFragmentTPFT"
-        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.PersonalInformationFragment"
-        android:label="fragment_tpft_personal_information"
-        tools:layout="@layout/fragment_tpft_personal_information" />
-    <fragment
-        android:id="@+id/personalInformationFragmentThirdParty"
-        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.PersonalInformationFragment"
-        android:label="fragment_thirdparty_personal_information"
-        tools:layout="@layout/fragment_thirdparty_personal_information" />
-    <fragment
-        android:id="@+id/personalInformationFragmentActOnly"
-        android:name="com.example.claimchapchap.insurancePolicies.actOnly.PersonalInformationFragment"
-        android:label="fragment_actonly_personal_information"
-        tools:layout="@layout/fragment_actonly_personal_information" />
     <activity
         android:id="@+id/comprehensiveMain"
         android:name="com.example.claimchapchap.ComprehensiveMainActivity"

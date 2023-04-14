@@ -19,7 +19,6 @@ class GoldQuoteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-
         binding = FragmentComprehensiveGoldQuoteBinding.inflate(layoutInflater)
         val view = binding.root
 
@@ -29,7 +28,7 @@ class GoldQuoteFragment : Fragment() {
         }
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_goldQuoteFragment_to_paymentFragment)
+            findNavController().navigate(R.id.action_goldQuoteFragment_to_goldPaymentFragment)
         }
         return view
     }

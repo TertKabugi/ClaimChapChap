@@ -30,7 +30,7 @@ class SilverQuoteFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_silverQuoteFragment_to_paymentFragment)
+            findNavController().navigate(R.id.action_silverQuoteFragment_to_silverPaymentFragment)
         }
         return view
     }

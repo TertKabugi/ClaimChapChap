@@ -11,47 +11,47 @@
         android:label="fragment_comprehensive_silver_quote"
         tools:layout="@layout/fragment_comprehensive_silver_quote" >
         <action
-            android:id="@+id/action_silverQuoteFragment_to_paymentFragment"
+            android:id="@+id/action_silverQuoteFragment_to_silverPaymentFragment"
             app:destination="@id/silverPaymentFragment" />
         <action
             android:id="@+id/action_silverQuoteFragment_to_comprehensiveCoverActivity"
-            app:destination="@id/comprehensiveCoverActivity" />
+            app:destination="@id/comprehensiveCoverActivity2" />
     </fragment>
     <fragment
         android:id="@+id/silverPaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldPaymentFragment"
-        android:label="fragment_comprehensive_payment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.SilverPaymentFragment"
+        android:label="fragment_comprehensive_silver_payment"
         tools:layout="@layout/fragment_comprehensive_silver_payment" >
         <action
-            android:id="@+id/action_paymentFragment_to_cardPaymentFragment"
-            app:destination="@id/silverCardPaymentFragment" />
-        <action
-            android:id="@+id/action_paymentFragment_to_mobilePaymentFragment"
+            android:id="@+id/action_silverPaymentFragment_to_silverMobilePaymentFragment"
             app:destination="@id/silverMobilePaymentFragment" />
         <action
-            android:id="@+id/action_paymentFragment_to_silverQuoteFragment"
+            android:id="@+id/action_silverPaymentFragment_to_silverCardPaymentFragment"
+            app:destination="@id/silverCardPaymentFragment" />
+        <action
+            android:id="@+id/action_silverPaymentFragment_to_silverQuoteFragment"
             app:destination="@id/silverQuoteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/silverCardPaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldCardPaymentFragment"
-        android:label="fragment_comprehensive_card_payment"
-        tools:layout="@layout/fragment_comprehensive_silver_card_payment" >
+        android:id="@+id/silverMobilePaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.SilverMobilePayment"
+        android:label="fragment_comprehensive_silver_mobile_payment"
+        tools:layout="@layout/fragment_comprehensive_silver_mobile_payment" >
         <action
-            android:id="@+id/action_cardPaymentFragment_to_paymentFragment"
+            android:id="@+id/action_silverMobilePaymentFragment_to_silverPaymentFragment"
             app:destination="@id/silverPaymentFragment" />
     </fragment>
     <fragment
-        android:id="@+id/silverMobilePaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldMobilePaymentFragment"
-        android:label="fragment_comprehensive_mobile_payment"
-        tools:layout="@layout/fragment_comprehensive_silver_mobile_payment" >
+        android:id="@+id/silverCardPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.SilverCardPayment"
+        android:label="fragment_comprehensive_silver_card_payment"
+        tools:layout="@layout/fragment_comprehensive_silver_card_payment" >
         <action
-            android:id="@+id/action_mobilePaymentFragment_to_paymentFragment"
+            android:id="@+id/action_silverCardPaymentFragment_to_silverPaymentFragment"
             app:destination="@id/silverPaymentFragment" />
     </fragment>
     <activity
-        android:id="@+id/comprehensiveCoverActivity"
+        android:id="@+id/comprehensiveCoverActivity2"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"
         android:label="activity_comprehensive_cover"
         tools:layout="@layout/activity_comprehensive_cover" />

@@ -12,7 +12,7 @@
         android:label="fragment_comprehensive_gold_quote"
         tools:layout="@layout/fragment_comprehensive_gold_quote" >
         <action
-            android:id="@+id/action_goldQuoteFragment_to_paymentFragment"
+            android:id="@+id/action_goldQuoteFragment_to_goldPaymentFragment"
             app:destination="@id/goldPaymentFragment" />
         <action
             android:id="@+id/action_goldQuoteFragment_to_comprehensiveCoverActivity"
@@ -24,13 +24,13 @@
         android:label="fragment_comprehensive_payment"
         tools:layout="@layout/fragment_comprehensive_gold_payment" >
         <action
-            android:id="@+id/action_paymentFragment_to_mobilePaymentFragment"
+            android:id="@+id/action_goldPaymentFragment_to_goldCardPaymentFragment"
+            app:destination="@id/goldCardPaymentFragment" />
+        <action
+            android:id="@+id/action_goldPaymentFragment_to_goldMobilePaymentFragment"
             app:destination="@id/goldMobilePaymentFragment" />
         <action
-            android:id="@+id/action_paymentFragment_to_cardPaymentFragment"
-            app:destination="@id/bronzeCardPaymentFragment" />
-        <action
-            android:id="@+id/action_paymentFragment_to_goldQuoteFragment"
+            android:id="@+id/action_goldPaymentFragment_to_goldQuoteFragment"
             app:destination="@id/goldQuoteFragment" />
     </fragment>
     <fragment
@@ -39,16 +39,16 @@
         android:label="fragment_comprehensive_mobile_payment"
         tools:layout="@layout/fragment_comprehensive_gold_mobile_payment" >
         <action
-            android:id="@+id/action_mobilePaymentFragment_to_paymentFragment"
+            android:id="@+id/action_goldMobilePaymentFragment_to_goldPaymentFragment"
             app:destination="@id/goldPaymentFragment" />
     </fragment>
     <fragment
-        android:id="@+id/bronzeCardPaymentFragment"
+        android:id="@+id/goldCardPaymentFragment"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldCardPaymentFragment"
         android:label="fragment_comprehensive_card_payment"
         tools:layout="@layout/fragment_comprehensive_gold_card_payment" >
         <action
-            android:id="@+id/action_cardPaymentFragment_to_paymentFragment"
+            android:id="@+id/action_goldCardPaymentFragment_to_goldPaymentFragment"
             app:destination="@id/goldPaymentFragment" />
     </fragment>
     <activity

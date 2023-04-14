@@ -27,7 +27,7 @@ class GoldPaymentFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_paymentFragment_to_goldQuoteFragment)
+            findNavController().navigate(R.id.action_goldPaymentFragment_to_goldQuoteFragment)
         }
 
         val radioGroup: RadioGroup = binding.radioGroup
@@ -40,10 +40,10 @@ class GoldPaymentFragment : Fragment() {
             if (id!=-1){
                 if (mobile.isChecked){
                     Toast.makeText(activity, "Mobile Payment is Selected", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_paymentFragment_to_mobilePaymentFragment)
+                    findNavController().navigate(R.id.action_goldPaymentFragment_to_goldMobilePaymentFragment)
                 }else if (card.isChecked){
                     Toast.makeText(activity, "Card Payment is Selected", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_paymentFragment_to_cardPaymentFragment)
+                    findNavController().navigate(R.id.action_goldPaymentFragment_to_goldCardPaymentFragment)
                 }
             }else{
                 Toast.makeText(activity,"Nothing is Selected", Toast.LENGTH_SHORT).show()

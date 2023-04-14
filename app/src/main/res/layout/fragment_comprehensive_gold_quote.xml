@@ -63,7 +63,7 @@
             <TextView
                 android:id="@+id/gold"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="0dp"
                 android:gravity="center"

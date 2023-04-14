@@ -10,7 +10,6 @@ import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensiveBronzeQuoteBinding
-import com.example.claimchapchap.databinding.FragmentComprehensiveSilverQuoteBinding
 
 class BronzeQuoteFragment : Fragment() {
 
@@ -28,9 +27,9 @@ class BronzeQuoteFragment : Fragment() {
             findNavController().navigate(R.id.action_bronzeQuoteFragment_to_comprehensiveCoverActivity)
         }
 
-        val next: Button = binding.btnNext
+        val next: Button = binding.btnNxt
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeQuoteFragment_to_paymentFragment)
+            findNavController().navigate(R.id.action_bronzeQuoteFragment_to_bronzePaymentFragment)
         }
         return view    }
 

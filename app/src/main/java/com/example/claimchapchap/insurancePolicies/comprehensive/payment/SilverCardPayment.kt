@@ -24,7 +24,7 @@ class SilverCardPayment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_cardPaymentFragment_to_paymentFragment)
+            findNavController().navigate(R.id.action_silverCardPaymentFragment_to_silverPaymentFragment)
         }
 
         return view

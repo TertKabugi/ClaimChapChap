@@ -30,16 +30,6 @@
             android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragmentComprehensive"
             app:destination="@id/personalInformationFragmentComprehensive" />
     </fragment>
-    <fragment
-        android:id="@+id/quoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
-        android:label="fragment_comprehensive_quote"
-        tools:layout="@layout/fragment_comprehensive_gold_quote" />
-    <fragment
-        android:id="@+id/bronzePaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldPaymentFragment"
-        android:label="fragment_comprehensive_payment"
-        tools:layout="@layout/fragment_comprehensive_gold_payment" />
     <activity
         android:id="@+id/comprehensiveCoverActivity"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"

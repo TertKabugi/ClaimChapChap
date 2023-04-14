@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/goldQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.GoldQuoteFragment"
         android:label="fragment_comprehensive_gold_quote"
         tools:layout="@layout/fragment_comprehensive_gold_quote" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/goldPaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.GoldPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.GoldPaymentFragment"
         android:label="fragment_comprehensive_payment"
         tools:layout="@layout/fragment_comprehensive_gold_payment" >
         <action

@@ -1,17 +1,14 @@
 package com.example.claimchapchap.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentHomeBinding
-import com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveMainFragment
 
 class HomeFragment : Fragment() {
 

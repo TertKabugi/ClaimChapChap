@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_only_navigation"
+    app:startDestination="@id/personalInformationFragment">
+
+    <fragment
+        android:id="@+id/personalInformationFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.PersonalInformationFragment"
+        android:label="fragment_actonly_personal_information"
+        tools:layout="@layout/fragment_actonly_personal_information" >
+        <action
+            android:id="@+id/action_personalInformationFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment" />
+        <action
+            android:id="@+id/action_personalInformationFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailsFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.VehicleDetailsFragment"
+        android:label="fragment_actonly_vehicle_details"
+        tools:layout="@layout/fragment_actonly_vehicle_details" >
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragment"
+            app:destination="@id/personalInformationFragment" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_actOnlyCoverActivity"
+            app:destination="@id/actOnlyCoverActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/actOnlyCoverActivity"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.ActOnlyCoverActivity"
+        android:label="activity_actonly_covers"
+        tools:layout="@layout/activity_actonly_covers" />
+</navigation>

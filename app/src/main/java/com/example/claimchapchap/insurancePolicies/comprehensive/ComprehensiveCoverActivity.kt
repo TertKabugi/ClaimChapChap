@@ -1,17 +1,13 @@
 package com.example.claimchapchap.insurancePolicies.comprehensive
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.ActivityComprehensiveCoverBinding
-import com.example.claimchapchap.databinding.FragmentComprehensiveVehicleDetailsBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ComprehensiveCoverActivity : AppCompatActivity() {
@@ -19,7 +15,6 @@ class ComprehensiveCoverActivity : AppCompatActivity() {
     private lateinit var binding: ActivityComprehensiveCoverBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityComprehensiveCoverBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -36,6 +31,5 @@ class ComprehensiveCoverActivity : AppCompatActivity() {
             )
         )
         navigation.setupWithNavController(navController)
-
     }
 }

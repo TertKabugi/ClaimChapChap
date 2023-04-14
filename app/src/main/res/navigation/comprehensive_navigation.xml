@@ -18,6 +18,7 @@
             android:id="@+id/action_personalInformationFragmentComprehensive_to_homeFragment"
             app:destination="@id/mainActivity" />
     </fragment>
+
     <fragment
         android:id="@+id/vehicleDetailsFragment"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.VehicleDetailsFragment"

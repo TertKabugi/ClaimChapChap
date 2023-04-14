@@ -7,7 +7,7 @@
     app:startDestination="@id/bronzeQuoteFragment">
     <fragment
         android:id="@+id/bronzeQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.BronzeQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.BronzeQuoteFragment"
         android:label="fragment_comprehensive_bronze_quote"
         tools:layout="@layout/fragment_comprehensive_bronze_quote" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/bronzePaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.BronzePaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.BronzePaymentFragment"
         android:label="fragment_comprehensive_payment"
         tools:layout="@layout/fragment_comprehensive_bronze_payment" >
         <action
@@ -55,4 +55,5 @@
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"
         android:label="activity_comprehensive_cover"
         tools:layout="@layout/activity_comprehensive_cover" />
+
 </navigation>

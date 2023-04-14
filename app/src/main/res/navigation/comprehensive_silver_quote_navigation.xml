@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/silverQuoteFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.SilverQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.quotes.SilverQuoteFragment"
         android:label="fragment_comprehensive_silver_quote"
         tools:layout="@layout/fragment_comprehensive_silver_quote" >
         <action
@@ -15,11 +15,11 @@
             app:destination="@id/silverPaymentFragment" />
         <action
             android:id="@+id/action_silverQuoteFragment_to_comprehensiveCoverActivity"
-            app:destination="@id/comprehensiveCoverActivity2" />
+            app:destination="@id/comprehensiveCoverActivity" />
     </fragment>
     <fragment
         android:id="@+id/silverPaymentFragment"
-        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.SilverPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.comprehensive.payment.SilverPaymentFragment"
         android:label="fragment_comprehensive_silver_payment"
         tools:layout="@layout/fragment_comprehensive_silver_payment" >
         <action
@@ -51,7 +51,7 @@
             app:destination="@id/silverPaymentFragment" />
     </fragment>
     <activity
-        android:id="@+id/comprehensiveCoverActivity2"
+        android:id="@+id/comprehensiveCoverActivity"
         android:name="com.example.claimchapchap.insurancePolicies.comprehensive.ComprehensiveCoverActivity"
         android:label="activity_comprehensive_cover"
         tools:layout="@layout/activity_comprehensive_cover" />

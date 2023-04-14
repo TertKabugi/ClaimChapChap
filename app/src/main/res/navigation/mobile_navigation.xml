@@ -50,7 +50,7 @@
         android:id="@+id/actOnlyMainActivity"
         android:name="com.example.claimchapchap.ActOnlyMainActivity"
         android:label="activity_act_only_main"
-        tools:layout="@layout/activity_act_only_main" />
+        tools:layout="@layout/activity_actonly_main" />
     <activity
         android:id="@+id/TPFTMainActivity"
         android:name="com.example.claimchapchap.TPFTMainActivity"

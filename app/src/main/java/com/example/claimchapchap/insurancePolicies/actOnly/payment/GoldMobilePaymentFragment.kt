@@ -16,14 +16,14 @@ class GoldMobilePaymentFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentActonlyGoldMobilePaymentBinding.inflate(layoutInflater)
         val view = binding.root
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_goldMobilePaymentFragment_to_goldPaymentFragment)
+            findNavController().navigate(R.id.action_goldMobilePaymentFragment2_to_goldPaymentFragment2)
         }
 
         return view

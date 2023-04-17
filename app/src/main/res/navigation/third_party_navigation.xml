@@ -13,10 +13,21 @@
         <action
             android:id="@+id/action_personalInformationFragment_to_vehicleDetailsFragment"
             app:destination="@id/vehicleDetailsFragment" />
+        <action
+            android:id="@+id/action_personalInformationFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/vehicleDetailsFragment"
         android:name="com.example.claimchapchap.insurancePolicies.thirdParty.VehicleDetailsFragment"
         android:label="fragment_thirdparty_vehicle_details"
-        tools:layout="@layout/fragment_thirdparty_vehicle_details" />
+        tools:layout="@layout/fragment_thirdparty_vehicle_details" >
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragment2"
+            app:destination="@id/personalInformationFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
 </navigation>

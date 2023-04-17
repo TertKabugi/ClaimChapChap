@@ -13,6 +13,27 @@
         android:theme="@style/Theme.ClaimChapChap"
         tools:targetApi="33">
         <activity
+            android:name=".SilverQuote"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GoldQuote"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BronzeQuote"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".insurancePolicies.actOnly.ActOnlyCoverActivity"
             android:exported="false">
             <meta-data

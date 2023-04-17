@@ -1,4 +1,4 @@
-package com.example.claimchapchap.insurancePolicies.thirdParty
+package com.example.claimchapchap.insurancePolicies.thirdParty.quotes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.claimchapchap.R
 
-class QuoteFragment : Fragment() {
+class BronzeQuoteFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_thirdparty_quote, container, false)
+        return inflater.inflate(R.layout.fragment_thirdparty_bronze_quote, container, false)
     }
 }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tpft_bronze_quote_navigation"
+    app:startDestination="@id/bronzeQuoteFragment4">
+
+    <fragment
+        android:id="@+id/bronzeQuoteFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.quotes.BronzeQuoteFragment"
+        android:label="fragment_tpft_bronze_quote"
+        tools:layout="@layout/fragment_tpft_bronze_quote" >
+        <action
+            android:id="@+id/action_bronzeQuoteFragment4_to_bronzePaymentFragment4"
+            app:destination="@id/bronzePaymentFragment4" />
+        <action
+            android:id="@+id/action_bronzeQuoteFragment4_to_TPFTCoversActivity4"
+            app:destination="@id/TPFTCoversActivity4" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzePaymentFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.BronzePaymentFragment"
+        android:label="fragment_tpft_bronze_payment"
+        tools:layout="@layout/fragment_tpft_bronze_payment" >
+        <action
+            android:id="@+id/action_bronzePaymentFragment4_to_bronzeCardPayment2"
+            app:destination="@id/bronzeCardPayment2" />
+        <action
+            android:id="@+id/action_bronzePaymentFragment4_to_bronzeMobilePayment2"
+            app:destination="@id/bronzeMobilePayment2" />
+        <action
+            android:id="@+id/action_bronzePaymentFragment4_to_bronzeQuoteFragment4"
+            app:destination="@id/bronzeQuoteFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeCardPayment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.BronzeCardPayment"
+        android:label="fragment_tpft_bronze_card_payment"
+        tools:layout="@layout/fragment_tpft_bronze_card_payment" >
+        <action
+            android:id="@+id/action_bronzeCardPayment2_to_bronzePaymentFragment4"
+            app:destination="@id/bronzePaymentFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeMobilePayment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.BronzeMobilePayment"
+        android:label="fragment_tpft_bronze_mobile_payment"
+        tools:layout="@layout/fragment_tpft_bronze_mobile_payment" >
+        <action
+            android:id="@+id/action_bronzeMobilePayment2_to_bronzePaymentFragment4"
+            app:destination="@id/bronzePaymentFragment4" />
+    </fragment>
+    <activity
+        android:id="@+id/TPFTCoversActivity4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.TPFTCoversActivity"
+        android:label="activity_tpft_covers"
+        tools:layout="@layout/activity_tpft_covers" />
+</navigation>

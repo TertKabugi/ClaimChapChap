@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".insurancePolicies.thirdPartyFireAndTheft.TPFTCoversActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".insurancePolicies.thirdPartyFireAndTheft.quotes.GoldQuoteFragment">
 
     <RelativeLayout
         android:id="@+id/actionBar"
@@ -19,8 +19,7 @@
             android:id="@+id/backIcon"
             android:layout_width="50dp"
             android:layout_height="60dp"
-            android:src="@drawable/ic_back"
-            android:contentDescription="@string/todo" />
+            android:src="@drawable/ic_back" />
 
         <TextView
             android:id="@+id/tvPolicies"
@@ -39,9 +38,9 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/choose_comprehensive_cover"
+        android:text="@string/final_quote"
         android:gravity="center"
-        android:textSize="28sp"
+        android:textSize="35sp"
         android:textColor="@color/red"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
@@ -49,29 +48,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/coversView"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+    <RelativeLayout
+        android:id="@+id/goldRelativeLayout"
+        android:layout_width="380dp"
+        android:layout_height="450dp"
         android:background="@drawable/rounded_corners_one"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:menu="@menu/tpft_covers_menu" />
+        app:layout_constraintVertical_bias="0.092">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_covers_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
+        <TextView
+            android:id="@+id/gold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="Gold Quote"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/next"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coversView"
-        app:navGraph="@navigation/tpft_covers_navigation" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

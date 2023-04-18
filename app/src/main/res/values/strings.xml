@@ -94,4 +94,5 @@
     <string name="please_enter_your_card_details">Please Enter your Card Details</string>
     <string name="please_enter_payment_details">Please Enter Payment Details</string>
     <string name="choose_thirdparty_cover">Choose ThirdParty Cover</string>
+    <string name="third_party_fire_and_theft_plan">Third Party Fire and Theft Plan</string>
 </resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tpft_gold_quote_navigation"
+    app:startDestination="@id/goldQuoteFragment4">
+
+    <fragment
+        android:id="@+id/goldQuoteFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.quotes.GoldQuoteFragment"
+        android:label="fragment_tpft_gold_quote"
+        tools:layout="@layout/fragment_tpft_gold_quote" >
+        <action
+            android:id="@+id/action_goldQuoteFragment4_to_goldPaymentFragment4"
+            app:destination="@id/goldPaymentFragment4" />
+        <action
+            android:id="@+id/action_goldQuoteFragment4_to_TPFTCoversActivity2"
+            app:destination="@id/TPFTCoversActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldPaymentFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.GoldPaymentFragment"
+        android:label="fragment_tpft_gold_payment"
+        tools:layout="@layout/fragment_tpft_gold_payment" >
+        <action
+            android:id="@+id/action_goldPaymentFragment4_to_goldCardPayment2"
+            app:destination="@id/goldCardPayment2" />
+        <action
+            android:id="@+id/action_goldPaymentFragment4_to_goldMobilePayment2"
+            app:destination="@id/goldMobilePayment2" />
+        <action
+            android:id="@+id/action_goldPaymentFragment4_to_goldQuoteFragment4"
+            app:destination="@id/goldQuoteFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldCardPayment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.GoldCardPayment"
+        android:label="fragment_tpft_gold_card_payment"
+        tools:layout="@layout/fragment_tpft_gold_card_payment" >
+        <action
+            android:id="@+id/action_goldCardPayment2_to_goldPaymentFragment4"
+            app:destination="@id/goldPaymentFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldMobilePayment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.payment.GoldMobilePayment"
+        android:label="fragment_tpft_gold_mobile_payment"
+        tools:layout="@layout/fragment_tpft_gold_mobile_payment" >
+        <action
+            android:id="@+id/action_goldMobilePayment2_to_goldPaymentFragment4"
+            app:destination="@id/goldPaymentFragment4" />
+    </fragment>
+    <activity
+        android:id="@+id/TPFTCoversActivity2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.TPFTCoversActivity"
+        android:label="activity_tpft_covers"
+        tools:layout="@layout/activity_tpft_covers" />
+</navigation>

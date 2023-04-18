@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tpft_covers_navigation"
+    app:startDestination="@id/goldFragment3">
+    <fragment
+        android:id="@+id/goldFragment3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.covers.GoldFragment"
+        android:label="fragment_tpft_gold"
+        tools:layout="@layout/fragment_tpft_gold" >
+        <action
+            android:id="@+id/action_goldFragment3_to_goldQuote3"
+            app:destination="@id/goldQuote3" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverFragment3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.covers.SilverFragment"
+        android:label="fragment_tpft_silver"
+        tools:layout="@layout/fragment_tpft_silver" >
+        <action
+            android:id="@+id/action_silverFragment3_to_silverQuote3"
+            app:destination="@id/silverQuote3" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeFragment3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.covers.BronzeFragment"
+        android:label="fragment_tpft_bronze"
+        tools:layout="@layout/fragment_tpft_bronze" >
+        <action
+            android:id="@+id/action_bronzeFragment3_to_bronzeQuote3"
+            app:destination="@id/bronzeQuote3" />
+    </fragment>
+    <activity
+        android:id="@+id/goldQuote3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.quotes.GoldQuote"
+        android:label="activity_tpft_gold_quote"
+        tools:layout="@layout/activity_tpft_gold_quote" />
+    <activity
+        android:id="@+id/silverQuote3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.quotes.SilverQuote"
+        android:label="activity_tpft_silver_quote"
+        tools:layout="@layout/activity_tpft_silver_quote" />
+    <activity
+        android:id="@+id/bronzeQuote3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.quotes.BronzeQuote"
+        android:label="activity_tpft_bronze_quote"
+        tools:layout="@layout/activity_tpft_bronze_quote" />
+</navigation>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tpft_navigation"
@@ -12,10 +13,29 @@
         <action
             android:id="@+id/action_personalInformationFragment_to_vehicleDetailsFragment"
             app:destination="@id/vehicleDetailsFragment" />
+        <action
+            android:id="@+id/action_personalInformationFragment_to_mainActivity3"
+            app:destination="@id/mainActivity3" />
     </fragment>
     <fragment
         android:id="@+id/vehicleDetailsFragment"
         android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.VehicleDetailsFragment"
         android:label="fragment_tpft_vehicle_details"
-        tools:layout="@layout/fragment_tpft_vehicle_details" />
+        tools:layout="@layout/fragment_tpft_vehicle_details" >
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragment3"
+            app:destination="@id/personalInformationFragment" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_TPFTCoversActivity"
+            app:destination="@id/TPFTCoversActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity3"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/TPFTCoversActivity"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdPartyFireAndTheft.TPFTCoversActivity"
+        android:label="activity_tpft_covers"
+        tools:layout="@layout/activity_tpft_covers" />
 </navigation>

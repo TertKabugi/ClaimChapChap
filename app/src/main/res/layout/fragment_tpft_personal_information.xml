@@ -29,7 +29,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:text="Third Party Fire and Theft Plan"
+            android:text="@string/third_party_fire_and_theft_plan"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="normal" />

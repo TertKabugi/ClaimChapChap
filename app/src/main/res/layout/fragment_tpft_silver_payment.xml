@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".insurancePolicies.thirdParty.payment.SilverPaymentFragment">
+    tools:context=".insurancePolicies.thirdPartyFireAndTheft.payment.SilverPaymentFragment">
 
     <RelativeLayout
         android:id="@+id/actionBar"
@@ -29,7 +29,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:text="@string/third_party_motor_insurance_plan"
+            android:text="@string/third_party_fire_and_theft_plan"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="normal" />
@@ -53,7 +53,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="thirdparty silver"
+        android:text="tpft silver"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,5 +104,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

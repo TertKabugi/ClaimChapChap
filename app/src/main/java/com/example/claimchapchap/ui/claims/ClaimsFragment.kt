@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentClaimsBinding
 
 class ClaimsFragment : Fragment() {
@@ -26,7 +28,7 @@ class ClaimsFragment : Fragment() {
             ViewModelProvider(this).get(ClaimsViewModel::class.java)
 
         _binding = FragmentClaimsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val view = binding.root
 
         val policyOne: TextView = binding.policyOne
         claimsViewModel.policyOne.observe(viewLifecycleOwner) {
@@ -45,7 +47,12 @@ class ClaimsFragment : Fragment() {
         claimsViewModel.policyTwoTxt.observe(viewLifecycleOwner) {
             txtPolicyTwo.text = it
         }
-        return root
+
+        val next = binding.newClaim
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_claims_to_newClaimFragment)
+        }
+        return view
     }
 
     override fun onDestroyView() {

@@ -12,7 +12,6 @@ import com.example.claimchapchap.onboarding.screens.*
 class ViewPagerFragment : Fragment() {
 
     private lateinit var binding: FragmentViewPagerBinding
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         binding = FragmentViewPagerBinding.inflate(layoutInflater)

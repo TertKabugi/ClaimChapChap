@@ -31,6 +31,6 @@ class BronzeQuoteFragment : Fragment() {
         next.setOnClickListener{
             findNavController().navigate(R.id.action_bronzeQuoteFragment_to_bronzePaymentFragment)
         }
-        return view    }
-
+        return view
+    }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/third_party_navigation"
@@ -25,9 +26,17 @@
         <action
             android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragment2"
             app:destination="@id/personalInformationFragment" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_thirdPartyCoverActivity"
+            app:destination="@id/thirdPartyCoverActivity" />
     </fragment>
     <activity
         android:id="@+id/mainActivity2"
         android:name="com.example.claimchapchap.MainActivity"
         android:label="MainActivity" />
+    <activity
+        android:id="@+id/thirdPartyCoverActivity"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.ThirdPartyCoverActivity"
+        android:label="activity_thirdparty_cover"
+        tools:layout="@layout/activity_thirdparty_cover" />
 </navigation>

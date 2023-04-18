@@ -5,15 +5,47 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.*
+import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
+import com.example.claimchapchap.databinding.FragmentThirdpartyBronzePaymentBinding
 
 class BronzePaymentFragment : Fragment() {
 
+    private lateinit var binding: FragmentThirdpartyBronzePaymentBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_thirdparty_bronze_payment, container, false)
+        binding = FragmentThirdpartyBronzePaymentBinding.inflate(layoutInflater)
+        val view = binding.root
+
+        val back: ImageView = binding.backIcon
+        back.setOnClickListener{
+            findNavController().navigate(R.id.action_bronzePaymentFragment3_to_bronzeQuoteFragment3)
+        }
+
+        val radioGroup: RadioGroup = binding.radioGroup
+        val mobile: RadioButton = binding.mobilePayment
+        val card: RadioButton = binding.cardPayment
+
+        val next: Button = binding.btnNext
+        next.setOnClickListener{
+            val id: Int = radioGroup.checkedRadioButtonId
+            if (id!=-1){
+                if (mobile.isChecked){
+                    Toast.makeText(activity, "Mobile Payment is Selected", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(R.id.action_bronzePaymentFragment3_to_bronzeMobilePayment)
+                }else if (card.isChecked){
+                    Toast.makeText(activity, "Card Payment is Selected", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(R.id.action_bronzePaymentFragment3_to_bronzeCardPayment)
+                }
+            }else{
+                Toast.makeText(activity,"Nothing is Selected", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        return view
     }
 }

@@ -29,7 +29,7 @@ class PersonalInformationFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_personalInformationFragmentComprehensive_to_homeFragment)
+            findNavController().navigate(R.id.action_personalInformationFragment_to_mainActivity2)
         }
         val next: Button = binding.btnNext
         next.setOnClickListener{

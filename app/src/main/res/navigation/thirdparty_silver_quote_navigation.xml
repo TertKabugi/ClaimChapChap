@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thirdparty_silver_quote_navigation"
+    app:startDestination="@id/silverQuoteFragment2">
+
+    <fragment
+        android:id="@+id/silverQuoteFragment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.quotes.SilverQuoteFragment"
+        android:label="fragment_thirdparty_silver_quote"
+        tools:layout="@layout/fragment_thirdparty_silver_quote" >
+        <action
+            android:id="@+id/action_silverQuoteFragment2_to_silverPaymentFragment2"
+            app:destination="@id/silverPaymentFragment2" />
+        <action
+            android:id="@+id/action_silverQuoteFragment2_to_thirdPartyCoverActivity4"
+            app:destination="@id/thirdPartyCoverActivity4" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverPaymentFragment2"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverPaymentFragment"
+        android:label="fragment_thirdparty_silver_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_payment" >
+        <action
+            android:id="@+id/action_silverPaymentFragment2_to_silverCardPayment"
+            app:destination="@id/silverCardPayment" />
+        <action
+            android:id="@+id/action_silverPaymentFragment2_to_silverMobilePayment"
+            app:destination="@id/silverMobilePayment" />
+        <action
+            android:id="@+id/action_silverPaymentFragment2_to_silverQuoteFragment2"
+            app:destination="@id/silverQuoteFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverCardPayment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverCardPayment"
+        android:label="fragment_thirdparty_silver_card_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_card_payment" >
+        <action
+            android:id="@+id/action_silverCardPayment_to_silverPaymentFragment2"
+            app:destination="@id/silverPaymentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverMobilePayment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverMobilePayment"
+        android:label="fragment_thirdparty_silver_mobile_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_mobile_payment" >
+        <action
+            android:id="@+id/action_silverMobilePayment_to_silverPaymentFragment2"
+            app:destination="@id/silverPaymentFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/thirdPartyCoverActivity4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.ThirdPartyCoverActivity"
+        android:label="activity_thirdparty_cover"
+        tools:layout="@layout/activity_thirdparty_cover" />
+</navigation>

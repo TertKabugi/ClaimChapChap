@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ClaimChapChap"
         tools:targetApi="33">
         <activity
+            android:name=".ui.claims.newclaim.NewClaimActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".insurancePolicies.thirdPartyFireAndTheft.quotes.GoldQuote"
             android:exported="false">
             <meta-data

@@ -95,4 +95,16 @@
     <string name="please_enter_payment_details">Please Enter Payment Details</string>
     <string name="choose_thirdparty_cover">Choose ThirdParty Cover</string>
     <string name="third_party_fire_and_theft_plan">Third Party Fire and Theft Plan</string>
+    <string name="collision_type">Collision Type</string>
+    <string name="incident_type">Incident Type</string>
+    <string name="accident_time">Accident Time</string>
+    <string name="policy_number">Policy Number</string>
+    <string name="location">Location</string>
+    <string name="severity_of_damage">Severity of Damage</string>
+    <string name="authorities_contacted">Authorities Contacted</string>
+    <string name="police_report_available">police Report Available</string>
+    <string name="property_damage">Property Damage</string>
+    <string name="bodily_injuries">Bodily Injuries</string>
+    <string name="witnesses">Witnesses</string>
+    <string name="select">Select</string>
 </resources>

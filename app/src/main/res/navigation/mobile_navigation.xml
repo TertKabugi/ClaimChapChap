@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_claims" >
         <action
             android:id="@+id/action_navigation_claims_to_newClaimFragment"
-            app:destination="@id/newClaimFragment" />
+            app:destination="@id/newClaimActivity" />
     </fragment>
     <activity
         android:id="@+id/comprehensiveMain"
@@ -60,9 +60,9 @@
         android:name="com.example.claimchapchap.TPFTMainActivity"
         android:label="activity_tpft_main"
         tools:layout="@layout/activity_tpft_main" />
-    <fragment
-        android:id="@+id/newClaimFragment"
-        android:name="com.example.claimchapchap.ui.claims.NewClaimFragment"
-        android:label="fragment_new_claim"
-        tools:layout="@layout/fragment_new_claim" />
+    <activity
+        android:id="@+id/newClaimActivity"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimActivity"
+        android:label="activity_new_claim"
+        tools:layout="@layout/activity_new_claim" />
 </navigation>

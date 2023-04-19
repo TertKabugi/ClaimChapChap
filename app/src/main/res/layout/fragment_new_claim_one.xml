@@ -9,11 +9,10 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="300dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:background="@color/Transparent"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,88 +20,35 @@
         app:layout_constraintVertical_bias="0.0">
 
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:text="Page One" />
-
-        <LinearLayout
-            android:id="@+id/carLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView17"
-            android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="parent">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/carMakeTil"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="1">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/carMake"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/car_make"
-                    android:inputType="text"
-                    android:paddingHorizontal="8dp"
-                    android:paddingVertical="12dp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/carModelTil"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_weight="1">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/carModel"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="@string/car_model"
-                    android:inputType="date"
-                    android:paddingHorizontal="8dp"
-                    android:paddingVertical="12dp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </LinearLayout>
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/yomTil"
+            android:id="@+id/policyNumberTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/carLayout"
+            android:layout_alignParentTop="true"
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/yearOfManufacture"
+                android:id="@+id/policyNumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/year_of_manufacture"
+                android:hint="@string/policy_number"
                 android:inputType="date"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/dopTil"
+            android:id="@+id/locationTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/yomTil"
+            android:layout_below="@+id/policyNumberTil"
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/dateOfPurchase"
+                android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/date_of_purchase"
+                android:hint="@string/location"
                 android:inputType="date"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
@@ -110,59 +56,93 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/valuationTil"
+            android:id="@+id/accidentDateTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dopTil"
+            android:layout_below="@+id/locationTil"
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/carValuation"
+                android:id="@+id/accidentDate"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/car_s_current_valuation"
+                android:hint="Accident date (mm/dd/yyyy)"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/numberPlateTil"
+            android:id="@+id/accidentTimeTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/valuationTil"
+            android:layout_below="@+id/accidentDateTil"
             android:layout_marginTop="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/numberPlate"
+                android:id="@+id/accidentTime"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/number_plate"
+                android:hint="@string/accident_time"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--        <Button-->
-<!--            android:id="@+id/btnNext"-->
-<!--            android:layout_width="250dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_below="@+id/textView16"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:layout_marginEnd="50dp"-->
-<!--            android:text="@string/next" />-->
-
-        <TextView
-            android:id="@+id/textView16"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/incidentTil"
             android:layout_width="match_parent"
-            android:gravity="center"
-            android:layout_height="50dp"
-            android:layout_below="@+id/numberPlateTil"
-            android:layout_marginTop="50dp"
-            android:text="Swipe to access other page"
-            android:textColor="@color/blue"
-            android:textSize="20sp"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accidentTimeTil"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/incident"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/incident_type"
+                android:inputType="text"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/collisionTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/incidentTil"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/collision"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/collision_type"
+                android:inputType="text"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/collisionTil"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/next" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView16"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/numberPlateTil"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:text="Swipe to access other page"-->
+<!--            android:textColor="@color/blue"-->
+<!--            android:textSize="20sp"/>-->
 
     </RelativeLayout>
 

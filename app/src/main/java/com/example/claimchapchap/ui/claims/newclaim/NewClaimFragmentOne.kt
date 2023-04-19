@@ -21,11 +21,10 @@ class NewClaimFragmentOne : Fragment() {
         val view = binding.root
 
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
-        val skip = binding.btnNext
-        skip.setOnClickListener{
-            viewPager?.currentItem = 1
-        }
-
+//        val skip = binding.btnNext
+//        skip.setOnClickListener{
+//            viewPager?.currentItem = 1
+//        }
 
         return view
     }

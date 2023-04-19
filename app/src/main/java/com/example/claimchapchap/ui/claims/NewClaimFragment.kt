@@ -42,15 +42,6 @@ class NewClaimFragment : Fragment() {
         // viewPager = id
         binding.viewPager.adapter = adapter
 
-        val navView: BottomNavigationView = binding.menu
-
-//        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-//        val appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.frag_one, R.id.frag_two
-//            )
-//        )
-//        navView.setupWithNavController(navController)
         return view
     }
 }

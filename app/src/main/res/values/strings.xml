@@ -100,7 +100,7 @@
     <string name="accident_time">Accident Time</string>
     <string name="policy_number">Policy Number</string>
     <string name="location">Location</string>
-    <string name="severity_of_damage">Severity of Damage</string>
+    <string name="incident_severity">Incident Severity</string>
     <string name="authorities_contacted">Authorities Contacted</string>
     <string name="police_report_available">police Report Available</string>
     <string name="property_damage">Property Damage</string>

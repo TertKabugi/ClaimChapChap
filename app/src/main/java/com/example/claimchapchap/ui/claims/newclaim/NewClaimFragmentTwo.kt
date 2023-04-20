@@ -19,27 +19,46 @@ import com.example.claimchapchap.databinding.TestBinding
 
 class NewClaimFragmentTwo : Fragment() {
 
-    private lateinit var binding: TestBinding
-
+    private lateinit var binding: FragmentNewClaimTwoBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = TestBinding.inflate(layoutInflater)
-        val vieww = binding.root
+        binding = FragmentNewClaimTwoBinding.inflate(layoutInflater)
+        val view = binding.root
 
-        val item = listOf("me","me","me","me","me")
-        val text: AutoCompleteTextView = binding.text
-        val adapter = ArrayAdapter(requireContext(),R.layout.z_list_item, item)
-        text.setAdapter(adapter)
+//        val item = listOf("me","me","me","me","me")
+//        val text: AutoCompleteTextView = binding.text
+//        val adapter = ArrayAdapter(requireContext(),R.layout.z_list_item, item)
+//        text.setAdapter(adapter)
+//
+//        text.onItemClickListener = AdapterView.OnItemClickListener {
+//                adapterView, view, i, l ->
+//            val itemSelected = adapterView.getItemAtPosition(i)
+//            Toast.makeText(activity, "Item: $itemSelected" , Toast.LENGTH_SHORT).show()
+//        }
 
-        text.onItemClickListener = AdapterView.OnItemClickListener {
-                adapterView, view, i, l ->
-            val itemSelected = adapterView.getItemAtPosition(i)
-            Toast.makeText(activity, "Item: $itemSelected" , Toast.LENGTH_SHORT).show()
-        }
+        val incidentSeverity = listOf("Trivial Damage","Minor Damage","Major Damage","Total Loss")
+        val incident: AutoCompleteTextView = binding.incident
+        val incidentAdapter = ArrayAdapter(requireContext(),R.layout.z_list_incident_severity, incidentSeverity)
+        incident.setAdapter(incidentAdapter)
 
-        return vieww
+        val authoritiesContacted = listOf("Paramedics","Fire Department","Traffic Police","Others","None")
+        val authorities: AutoCompleteTextView = binding.authorities
+        val authoritiesAdapter = ArrayAdapter(requireContext(),R.layout.z_list_authorities_contacted, authoritiesContacted)
+        authorities.setAdapter(authoritiesAdapter)
+
+        val policeReportAvailable = listOf("Yes","No","N/A")
+        val policeReport: AutoCompleteTextView = binding.policeReport
+        val policeReportAdapter = ArrayAdapter(requireContext(),R.layout.z_list_authorities_contacted, policeReportAvailable)
+        policeReport.setAdapter(policeReportAdapter)
+
+        val propertyDamage = listOf("Yes","No","N/A")
+        val damage: AutoCompleteTextView = binding.propertyDamage
+        val damageAdapter = ArrayAdapter(requireContext(),R.layout.z_list_yes_no, propertyDamage)
+        damage.setAdapter(damageAdapter)
+
+        return view
     }
 }

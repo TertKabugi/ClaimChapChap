@@ -25,14 +25,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+        <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/policyNumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/policy_number"
-                android:inputType="date"
+                android:inputType="number"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -42,14 +44,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/policyNumberTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/location"
-                android:inputType="date"
+                android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
 
@@ -60,14 +63,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/locationTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/accidentDate"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Accident date (mm/dd/yyyy)"
-                android:inputType="text"
+                android:inputType="date"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -77,14 +81,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/accidentDateTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/accidentTime"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:hint="@string/accident_time"
-                android:inputType="text"
+                android:inputType="time"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -94,16 +99,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/accidentTimeTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/incident"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:hint="@string/incident_type"
-                android:inputType="text"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -111,14 +118,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/incidentTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/collision"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:hint="@string/collision_type"
-                android:inputType="text"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -129,7 +137,7 @@
             android:layout_height="60dp"
             android:layout_below="@+id/collisionTil"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
             android:text="@string/next" />
 

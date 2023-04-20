@@ -13,10 +13,10 @@ class ViewPagerFragment : Fragment() {
 
     private lateinit var binding: FragmentViewPagerBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+
         // Inflate the layout for this fragment
         binding = FragmentViewPagerBinding.inflate(layoutInflater)
         val view = binding.root
-        // val view = inflater.inflate(R.layout.fragment_view_pager, container, false)
 
         val fragmentList = arrayListOf<Fragment>(
             ScreenOne(),

@@ -20,18 +20,19 @@
         app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/damageTil"
+            android:id="@+id/incidentTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/damage"
+            <AutoCompleteTextView
+                android:id="@+id/incident"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/severity_of_damage"
-                android:inputType="date"
+                android:hint="@string/incident_severity"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -40,15 +41,16 @@
             android:id="@+id/authoritiesTil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/damageTil"
-            android:layout_marginTop="30dp">
+            android:layout_below="@+id/incidentTil"
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/authorities"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/authorities_contacted"
-                android:inputType="date"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
 
@@ -59,14 +61,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/authoritiesTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/policeReport"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/police_report_available"
-                android:inputType="text"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -76,14 +79,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/policeReportTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/propertyDamage"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/property_damage"
-                android:inputType="text"
+                android:inputType="none"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -93,14 +97,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/propertyDamageTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/bodilyInjuries"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/bodily_injuries"
-                android:inputType="text"
+                android:inputType="number"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -110,14 +115,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bodilyInjuriesTil"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/witnesses"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/witnesses"
-                android:inputType="text"
+                android:inputType="number"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -128,7 +134,7 @@
             android:layout_height="60dp"
             android:layout_below="@+id/witnessesTil"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
             android:text="@string/next" />
 

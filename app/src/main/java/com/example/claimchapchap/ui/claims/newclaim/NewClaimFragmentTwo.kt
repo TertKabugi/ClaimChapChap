@@ -1,5 +1,6 @@
 package com.example.claimchapchap.ui.claims.newclaim
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Layout
 import androidx.fragment.app.Fragment
@@ -9,9 +10,12 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.view.get
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentNewClaimTwoBinding
@@ -27,17 +31,6 @@ class NewClaimFragmentTwo : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentNewClaimTwoBinding.inflate(layoutInflater)
         val view = binding.root
-
-//        val item = listOf("me","me","me","me","me")
-//        val text: AutoCompleteTextView = binding.text
-//        val adapter = ArrayAdapter(requireContext(),R.layout.z_list_item, item)
-//        text.setAdapter(adapter)
-//
-//        text.onItemClickListener = AdapterView.OnItemClickListener {
-//                adapterView, view, i, l ->
-//            val itemSelected = adapterView.getItemAtPosition(i)
-//            Toast.makeText(activity, "Item: $itemSelected" , Toast.LENGTH_SHORT).show()
-//        }
 
         val incidentSeverity = listOf("Trivial Damage","Minor Damage","Major Damage","Total Loss")
         val incident: AutoCompleteTextView = binding.incident
@@ -58,6 +51,11 @@ class NewClaimFragmentTwo : Fragment() {
         val damage: AutoCompleteTextView = binding.propertyDamage
         val damageAdapter = ArrayAdapter(requireContext(),R.layout.z_list_yes_no, propertyDamage)
         damage.setAdapter(damageAdapter)
+
+        val next: Button = binding.btnNext
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_newClaimMainFragment_to_partiesInvolvedFragment)
+        }
 
         return view
     }

@@ -48,19 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar" />
 
-    <TextView
-        android:id="@+id/welcome2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="thirdparty gold"
-        android:layout_marginTop="10dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
-
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="350dp"
@@ -71,44 +58,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome">
 
-        <EditText
-            android:id="@+id/etPayBill"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yomTil"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
-            android:hint="@string/paybill_number"
-            android:inputType="number" />
+            android:layout_marginTop="30dp">
 
-        <EditText
-            android:id="@+id/etAccountName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/etPayBill"
-            android:layout_marginTop="50dp"
-            android:ems="10"
-            android:hint="@string/account_name"
-            android:inputType="date" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/yearOfManufacture"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/paybill_number"
+                android:inputType="number"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/etPremiumAmount"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dopTil"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_below="@+id/etAccountName"
-            android:layout_marginTop="50dp"
-            android:ems="10"
-            android:hint="@string/premium_amount"
-            android:inputType="text" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yomTil"
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateOfPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/account_name"
+                android:inputType="text"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valuationTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dopTil"
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/carValuation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/premium_amount"
+                android:inputType="number"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/etPremiumAmount"
-            android:layout_marginTop="60dp"
+            android:layout_below="@+id/valuationTil"
+            android:layout_marginTop="100dp"
             android:gravity="center"
-            android:text="Once you click next you will be prompted to input your M-Pesa PIN please do so accordingly"
-            android:textSize="20sp"
+            android:text="@string/once_you_click_next_you_will_be_prompted_to_input_your_m_pesa_pin_please_do_so_accordingly"
+            android:textSize="15sp"
             android:textColor="@color/blue"/>
 
         <Button
@@ -117,7 +131,7 @@
             android:layout_height="60dp"
             android:layout_below="@+id/textView14"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="47dp"
             android:text="@string/next" />
     </RelativeLayout>

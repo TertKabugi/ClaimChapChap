@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/policyNumberTil"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/locationTil"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/accidentDateTil"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/accidentTimeTil"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/incidentTil"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
@@ -137,7 +137,7 @@
             android:layout_height="60dp"
             android:layout_below="@+id/collisionTil"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="50dp"
             android:text="@string/next" />
 

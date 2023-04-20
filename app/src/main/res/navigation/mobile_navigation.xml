@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_claims" >
         <action
             android:id="@+id/action_navigation_claims_to_newClaimFragment"
-            app:destination="@id/newClaimActivity" />
+            app:destination="@id/newClaimMainFragment" />
     </fragment>
     <activity
         android:id="@+id/comprehensiveMain"
@@ -65,4 +65,25 @@
         android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimActivity"
         android:label="activity_new_claim"
         tools:layout="@layout/activity_new_claim" />
+    <fragment
+        android:id="@+id/partiesInvolvedFragment"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.PartiesInvolvedFragment"
+        android:label="fragment_claims_parties_involved"
+        tools:layout="@layout/fragment_claims_parties_involved" >
+        <action
+            android:id="@+id/action_partiesInvolvedFragment_to_newClaimMainFragment"
+            app:destination="@id/newClaimMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newClaimMainFragment"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimMainFragment"
+        android:label="fragment_new_claim_main"
+        tools:layout="@layout/fragment_new_claim_main" >
+        <action
+            android:id="@+id/action_newClaimMainFragment_to_partiesInvolvedFragment"
+            app:destination="@id/partiesInvolvedFragment" />
+        <action
+            android:id="@+id/action_newClaimMainFragment_to_navigation_claims"
+            app:destination="@id/navigation_claims" />
+    </fragment>
 </navigation>

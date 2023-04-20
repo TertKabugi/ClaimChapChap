@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.claims.newclaim.partiesinvolved.ConfirmClaimFragment">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvPolicies"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/make_a_claim"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_your_claim"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+    <RelativeLayout
+        android:id="@+id/confirmation"
+        android:layout_width="380dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/number_input"
+        android:backgroundTint="@color/chilean_heath"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/claimNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claim Number"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/claimNoInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Claim Number"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/one"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/policyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Policy Number"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/policyNoInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Policy Number"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/two">
+
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Involved"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/carInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Car Involved"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/three"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/numberPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number Plate"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/numberPlateInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Number Plate"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/four"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/accidentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accident Date"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/accidentDateInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Accident Date"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/six"
+            android:layout_below="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/accidentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accident Location"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/accidentLocationInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Accident Location"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seven"
+            android:layout_below="@+id/six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/incidentSeverity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incident_severity"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/incidentSeverityInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="@string/incident_severity"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eight"
+            android:layout_below="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/partiesInvolved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parties Involved"
+                android:layout_marginStart="0dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/claimNoInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="Parties Involved"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -107,4 +107,7 @@
     <string name="bodily_injuries">Bodily Injuries</string>
     <string name="witnesses">Witnesses</string>
     <string name="select">Select</string>
+    <string name="once_you_click_next_you_will_be_prompted_to_input_your_m_pesa_pin_please_do_so_accordingly">Once you click next you will be prompted to input your M-Pesa PIN please do so accordingly</string>
+    <string name="make_a_claim">Make a Claim</string>
+    <string name="confirm_your_claim">Confirm Your Claim</string>
 </resources>

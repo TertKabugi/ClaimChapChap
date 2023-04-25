@@ -73,6 +73,9 @@
         <action
             android:id="@+id/action_partiesInvolvedFragment_to_newClaimMainFragment"
             app:destination="@id/newClaimMainFragment" />
+        <action
+            android:id="@+id/action_partiesInvolvedFragment_to_confirmClaimFragment"
+            app:destination="@id/confirmClaimFragment" />
     </fragment>
     <fragment
         android:id="@+id/newClaimMainFragment"
@@ -85,5 +88,14 @@
         <action
             android:id="@+id/action_newClaimMainFragment_to_navigation_claims"
             app:destination="@id/navigation_claims" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmClaimFragment"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.ConfirmClaimFragment"
+        android:label="fragment_claim_confirm_claim"
+        tools:layout="@layout/fragment_claim_confirm_claim" >
+        <action
+            android:id="@+id/action_confirmClaimFragment_to_partiesInvolvedFragment"
+            app:destination="@id/partiesInvolvedFragment" />
     </fragment>
 </navigation>

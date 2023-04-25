@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"

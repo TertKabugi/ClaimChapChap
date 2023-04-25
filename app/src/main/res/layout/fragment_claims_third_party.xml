@@ -9,13 +9,12 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="350dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <LinearLayout
             android:id="@+id/carLayout"
@@ -123,7 +122,8 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Write Birth Certificate in National ID field for minors"
+            android:text="@string/write_birth_certificate_in_national_id_field_for_minors"
+            android:gravity="center"
             android:layout_below="@id/phoneNumberTil"
             android:textColor="@color/blue"
             android:textSize="15sp"

@@ -11,6 +11,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyVehicleDetailsBinding
 import com.example.claimchapchap.databinding.FragmentComprehensiveVehicleDetailsBinding
+import com.example.claimchapchap.models.Policies
+import com.example.claimchapchap.sampleData.SampleDataUsers
 
 
 class VehicleDetailsFragment : Fragment() {
@@ -31,6 +33,15 @@ class VehicleDetailsFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
+            val newPolicy = Policies()
+            newPolicy.firstName = binding.firstName.toString()
+            newPolicy.secondName = binding.secondName.toString()
+            newPolicy.email = binding.etEmailAddress.toString()
+            newPolicy.phoneNumber = binding.etPhoneNumber.toString()
+            newPolicy.password = binding.etPassword.toString()
+            newPolicy.cPassword = binding.etConfirmPassword.toString()
+
+            SampleDataUsers.addUser(newUser)
             findNavController().navigate(R.id.action_vehicleDetailsFragment_to_comprehensiveCoverActivity)
         }
 

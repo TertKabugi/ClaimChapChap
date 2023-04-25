@@ -1,15 +1,14 @@
 package com.example.claimchapchap
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
 import com.example.claimchapchap.databinding.ActivityRegistrationBinding
+import com.example.claimchapchap.models.Users
+import com.example.claimchapchap.sampleData.SampleDataUsers
 
 class RegistrationActivity : AppCompatActivity(), View.OnClickListener, View.OnFocusChangeListener, View.OnKeyListener {
     
@@ -19,24 +18,50 @@ class RegistrationActivity : AppCompatActivity(), View.OnClickListener, View.OnF
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.etName.onFocusChangeListener = this
+        binding.firstName.onFocusChangeListener = this
+        binding.secondName.onFocusChangeListener = this
         binding.etEmailAddress.onFocusChangeListener = this
         binding.etPhoneNumber.onFocusChangeListener = this
         binding.etPassword.onFocusChangeListener = this
         binding.etConfirmPassword.onFocusChangeListener = this
 
         val btnSignUp: Button = findViewById(R.id.btnSignUp)
+        btnSignUp.setOnClickListener{
+            val newUser = Users()
+            newUser.firstName = binding.firstName.toString()
+            newUser.secondName = binding.secondName.toString()
+            newUser.email = binding.etEmailAddress.toString()
+            newUser.phoneNumber = binding.etPhoneNumber.toString()
+            newUser.password = binding.etPassword.toString()
+            newUser.cPassword = binding.etConfirmPassword.toString()
 
+            SampleDataUsers.addUser(newUser)
+        }
     }
 
-    private fun validateName(): Boolean{
+    private fun validateFirstName(): Boolean{
         var errorMessage: String? = null
-        val sName = binding.etName.text.toString()
+        val sName = binding.firstName.text.toString()
         if (sName.isEmpty()){
-            errorMessage = "UserName Is Required"
+            errorMessage = "First Name Is Required"
         }
         if (errorMessage!=null){
-            binding.nameTil.apply {
+            binding.firstNameTil.apply {
+                isErrorEnabled = true
+                error = errorMessage
+            }
+        }
+
+        return errorMessage == null
+    }
+    private fun validateSecondName(): Boolean{
+        var errorMessage: String? = null
+        val sName = binding.secondName.text.toString()
+        if (sName.isEmpty()){
+            errorMessage = "Second Name Is Required"
+        }
+        if (errorMessage!=null){
+            binding.secondNameTil.apply {
                 isErrorEnabled = true
                 error = errorMessage
             }
@@ -115,19 +140,28 @@ class RegistrationActivity : AppCompatActivity(), View.OnClickListener, View.OnF
 
 
     override fun onClick(view: View?) {
-        TODO("Not yet implemented")
+
     }
 
     override fun onFocusChange(view: View?, hasFocus: Boolean) {
         if (view!=null){
             when (view.id){
-                R.id.etName -> {
+                R.id.firstName -> {
                     if (hasFocus){
-                        if (binding.nameTil.isCounterEnabled){
-                            binding.nameTil.isErrorEnabled = false
+                        if (binding.firstNameTil.isCounterEnabled){
+                            binding.firstNameTil.isErrorEnabled = false
                         }
                     }else{
-                        validateName()
+                        validateFirstName()
+                    }
+                }
+                R.id.secondName -> {
+                    if (hasFocus){
+                        if (binding.secondNameTil.isCounterEnabled){
+                            binding.secondNameTil.isErrorEnabled = false
+                        }
+                    }else{
+                        validateSecondName()
                     }
                 }
                 R.id.etEmailAddress -> {

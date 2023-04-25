@@ -1,102 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:focusableInTouchMode="true"
-    tools:context=".ui.claims.newclaim.NewClaimFragmentTwo">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="330dp"
+    <LinearLayout
+        android:background="@drawable/number_input"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:orientation="horizontal">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/damageTil"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvPolicy"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="30dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            android:layout_margin="10dp"
+            android:text="Destiny"
+            android:textColor="#303030"
+            android:textSize="20sp" />
 
-            <AutoCompleteTextView
-                android:id="@+id/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/select"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/propertyDamageTil"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/policeReportTil"-->
-<!--            android:layout_marginTop="30dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/propertyDamage"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:hint="@string/property_damage"-->
-<!--                android:inputType="text"-->
-<!--                android:paddingHorizontal="8dp"-->
-<!--                android:paddingVertical="12dp" />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/bodilyInjuriesTil"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/propertyDamageTil"-->
-<!--            android:layout_marginTop="30dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/bodilyInjuries"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:hint="@string/bodily_injuries"-->
-<!--                android:inputType="text"-->
-<!--                android:paddingHorizontal="8dp"-->
-<!--                android:paddingVertical="12dp" />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/witnessesTil"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/bodilyInjuriesTil"-->
-<!--            android:layout_marginTop="30dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/witnesses"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="50dp"-->
-<!--                android:hint="@string/witnesses"-->
-<!--                android:inputType="text"-->
-<!--                android:paddingHorizontal="8dp"-->
-<!--                android:paddingVertical="12dp"/>-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnNext"-->
-<!--            android:layout_width="250dp"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_below="@+id/witnessesTil"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:layout_marginEnd="50dp"-->
-<!--            android:text="@string/next" />-->
-
-    </RelativeLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

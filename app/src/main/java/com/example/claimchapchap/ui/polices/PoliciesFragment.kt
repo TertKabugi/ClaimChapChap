@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.claimchapchap.databinding.FragmentPoliciesBinding
 import com.example.claimchapchap.models.Policies
+import com.example.claimchapchap.sampleData.SampleDataPolicies
 import com.example.claimchapchap.services.PolicyServices
 import com.example.claimchapchap.services.ServiceBuilder
 import retrofit2.Call
@@ -58,27 +59,26 @@ class PoliciesFragment : Fragment() {
         _binding = null
     }
 
-//    private fun loadPolicies(){
-//        val list: RecyclerView = binding.recyclerView
-//        //list.adapter = Users(SampleData)
-//        val usersServices = ServiceBuilder.buildService(PolicyServices::class.java)
-//        val requestCall = usersServices.getPolicyList()
-//        requestCall.enqueue(object: Callback<List<Policies>> {
-//            override fun onResponse(
-//                call: Call<List<Policies>>,
-//                response: Response<List<Policies>>
-//            ) {
-//                if (response.isSuccessful){
-//                    val policiesList = response.body()!!
-//                    val list: RecyclerView = binding.recyclerView
-//                    list.adapter = PolicyAdapter(policiesList)
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<List<Policies>>, t: Throwable) {
-//                TODO("Not yet implemented")
-//            }
-//
-//        })
-//    }
+    private fun loadPolicies(){
+        val policyServices = ServiceBuilder.buildService(PolicyServices::class.java)
+        val requestCall = policyServices.getPolicyList()
+        requestCall.enqueue(object: Callback<List<Policies>> {
+            override fun onResponse(
+                call: Call<List<Policies>>,
+                response: Response<List<Policies>>
+            ) {
+                if (response.isSuccessful){
+                    val policiesList = response.body()!!
+                    binding.recyclerView.adapter = PolicyAdapter(policiesList)
+                    val list: RecyclerView = binding.recyclerView
+                    list.adapter = PolicyAdapter(policiesList)
+                }
+            }
+
+            override fun onFailure(call: Call<List<Policies>>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+
+        })
+    }
 }

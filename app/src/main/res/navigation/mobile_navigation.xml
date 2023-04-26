@@ -98,4 +98,41 @@
             android:id="@+id/action_confirmClaimFragment_to_partiesInvolvedFragment"
             app:destination="@id/partiesInvolvedFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/newClaimFragmentOne"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimFragmentOne"
+        android:label="fragment_new_claim_one"
+        tools:layout="@layout/fragment_new_claim_one" >
+        <action
+            android:id="@+id/action_newClaimFragmentOne_to_newClaimFragmentTwo"
+            app:destination="@id/newClaimFragmentTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/newClaimFragmentTwo"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimFragmentTwo"
+        android:label="fragment_new_claim_two"
+        tools:layout="@layout/fragment_new_claim_two" />
+    <fragment
+        android:id="@+id/driverOne"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverOne"
+        android:label="fragment_claims_driver_one"
+        tools:layout="@layout/fragment_claims_driver_one" >
+        <action
+            android:id="@+id/action_driverOne_to_driverTwo"
+            app:destination="@id/driverTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverTwo"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverTwo"
+        android:label="fragment_claims_driver_two"
+        tools:layout="@layout/fragment_claims_driver_two" >
+        <action
+            android:id="@+id/action_driverTwo_to_thirdParty2"
+            app:destination="@id/thirdParty2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdParty2"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.ThirdParty"
+        android:label="fragment_claims_third_party"
+        tools:layout="@layout/fragment_claims_third_party" />
 </navigation>

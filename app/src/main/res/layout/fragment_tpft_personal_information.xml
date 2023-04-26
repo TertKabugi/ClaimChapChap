@@ -156,8 +156,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/kra"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/password"
+                android:layout_height="50dp"
+                android:hint="@string/kra_pin"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
@@ -173,7 +173,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/number"
+                android:id="@+id/phoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/phone_number"
@@ -194,7 +194,7 @@
                 android:id="@+id/driversLicense"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/phone_number"
+                android:hint="@string/driver_s_license_no"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />

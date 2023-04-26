@@ -157,7 +157,7 @@
                 android:id="@+id/kra"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="@string/password"
+                android:hint="@string/kra_pin"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
@@ -173,7 +173,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/number"
+                android:id="@+id/phoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/phone_number"

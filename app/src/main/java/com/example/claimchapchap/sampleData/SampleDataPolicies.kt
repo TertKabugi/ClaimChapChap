@@ -7,7 +7,7 @@ import java.util.*
 
 object SampleDataPolicies {
 
-    private val USERS = ArrayList<Policies>()
+    val POLICIES = ArrayList<Policies>()
 
     private var COUNT = 3
 
@@ -15,79 +15,100 @@ object SampleDataPolicies {
 
     init {
         // Add some sample items
-        val newUser1 = Policies()
-        newUser1.id = 1
-        newUser1.firstName = "Tertius"
-        newUser1.secondName = "Kabugi"
-        newUser1.phoneNumber = "0794655918"
-        newUser1.email = "kingkabugi@gmail.com"
-        newUser1.password = "password"
-        newUser1.cPassword = "password"
-        USERS.add(newUser1)
+        val newPolicy1 = Policies()
+        newPolicy1.id = 1
+        newPolicy1.firstName = "Tertius"
+        newPolicy1.secondName = "Kabugi"
+        newPolicy1.dob = "01/01/2001"
+        newPolicy1.nationalID = "01"
+        newPolicy1.kraPin = "pin1"
+        newPolicy1.phoneNumber = "0794655918"
+        newPolicy1.driversLicenceNo = "01"
+        newPolicy1.carMake = "Toyota"
+        newPolicy1.carModel = "Prius"
+        newPolicy1.yom = "01/01/2001"
+        newPolicy1.dop = "01/01/2001"
+        newPolicy1.carValuation = "1000000"
+        newPolicy1.numberPlate = "AAA 001A"
+        POLICIES.add(newPolicy1)
 
-        val newUser2 = Policies()
-        newUser2.id = 2
-        newUser2.firstName = "Tertius"
-        newUser2.secondName = "Kabugi"
-        newUser2.phoneNumber = "0794655918"
-        newUser2.email = "kingkabugi@gmail.com"
-        newUser2.password = "password"
-        newUser2.cPassword = "password"
-        USERS.add(newUser2)
+        val newPolicy2 = Policies()
+        newPolicy2.id = 1
+        newPolicy2.firstName = "John"
+        newPolicy2.secondName = "Doe"
+        newPolicy2.dob = "02/02/2002"
+        newPolicy2.nationalID = "02"
+        newPolicy2.kraPin = "pin2"
+        newPolicy2.phoneNumber = "0794655918"
+        newPolicy2.driversLicenceNo = "02"
+        newPolicy2.carMake = "Mercedes"
+        newPolicy2.carModel = "G63"
+        newPolicy2.yom = "02/02/2002"
+        newPolicy2.dop = "02/02/2002"
+        newPolicy2.carValuation = "2000000"
+        newPolicy2.numberPlate = "BBB 002B"
+        POLICIES.add(newPolicy2)
 
-        val newUser3 = Policies()
-        newUser3.id = 3
-        newUser3.firstName = "Tertius"
-        newUser3.secondName = "Kabugi"
-        newUser3.phoneNumber = "0794655918"
-        newUser3.email = "kingkabugi@gmail.com"
-        newUser3.password = "password"
-        newUser3.cPassword = "password"
-        USERS.add(newUser3)
+        val newPolicy3 = Policies()
+        newPolicy2.id = 1
+        newPolicy2.firstName = "Kalvin"
+        newPolicy2.secondName = "Osoro"
+        newPolicy2.dob = "03/03/2003"
+        newPolicy2.nationalID = "03"
+        newPolicy2.kraPin = "pin3"
+        newPolicy2.phoneNumber = "0794655918"
+        newPolicy2.driversLicenceNo = "03"
+        newPolicy2.carMake = "Subaru"
+        newPolicy2.carModel = "Impreza"
+        newPolicy2.yom = "03/03/2003"
+        newPolicy2.dop = "03/03/2003"
+        newPolicy2.carValuation = "3000000"
+        newPolicy2.numberPlate = "CCC 003C"
+        POLICIES.add(newPolicy3)
     }
 
-    fun addUser(item: Users) {
+    fun addPolicy(item: Policies) {
         item.id = COUNT
-        USERS.add(item)
+        POLICIES.add(item)
         COUNT += 1
     }
 
-    fun getUserById(id: Int): Policies? {
-        for (i in USERS.indices) {
-            if (USERS[i].id == id) {
-                return USERS[i]
+    fun getPolicyById(id: Int): Policies? {
+        for (i in POLICIES.indices) {
+            if (POLICIES[i].id == id) {
+                return POLICIES[i]
             }
         }
 
         return null
     }
 
-    fun deleteUser(id: Int) {
+    fun deletePolicy(id: Int) {
         var userToRemove: Policies? = null
 
-        for (i in USERS.indices) {
-            if (USERS[i].id == id) {
-                userToRemove = USERS[i]
+        for (i in POLICIES.indices) {
+            if (POLICIES[i].id == id) {
+                userToRemove = POLICIES[i]
             }
         }
 
         if (userToRemove != null) {
-            USERS.remove(userToRemove)
+            POLICIES.remove(userToRemove)
         }
     }
 
-    fun updateUsers(user: Policies) {
-        for (i in USERS.indices) {
-            if (USERS[i].id == user.id) {
-                val userToUpdate = USERS[i]
-
-                userToUpdate.firstName = user.firstName
-                userToUpdate.secondName = user.secondName
-                userToUpdate.email = user.email
-                userToUpdate.phoneNumber = user.phoneNumber
-                userToUpdate.password = user.password
-                userToUpdate.cPassword = user.cPassword
-            }
-        }
-    }
+//    fun updatePolicy(user: Policies) {
+//        for (i in POLICIES.indices) {
+//            if (POLICIES[i].id == user.id) {
+//                val userToUpdate = POLICIES[i]
+//
+//                userToUpdate.firstName = user.firstName
+//                userToUpdate.secondName = user.secondName
+//                userToUpdate.email = user.email
+//                userToUpdate.phoneNumber = user.phoneNumber
+//                userToUpdate.password = user.password
+//                userToUpdate.cPassword = user.cPassword
+//            }
+//        }
+//    }
 }

@@ -13,6 +13,7 @@ import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensivePersonalInformationBinding
 import com.example.claimchapchap.models.Policies
 import com.example.claimchapchap.models.Users
+import com.example.claimchapchap.sampleData.SampleDataPolicies
 import com.example.claimchapchap.sampleData.SampleDataUsers
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -39,17 +40,17 @@ class PersonalInformationFragment : Fragment() {
             val newPolicy = Policies()
             newPolicy.firstName = binding.firstName.toString()
             newPolicy.secondName = binding.secondName.toString()
-            newPolicy.dateOfBirth = binding.dateOfBirth.toString()
+            newPolicy.dob = binding.dateOfBirth.toString()
             newPolicy.nationalID = binding.idNumber.toString()
-            newPolicy.phoneNumber = binding.etPassword.toString()
-            newPolicy.cPassword = binding.etConfirmPassword.toString()
+            newPolicy.kraPin = binding.kra.toString()
+            newPolicy.phoneNumber = binding.phoneNumber.toString()
+            newPolicy.driversLicenceNo = binding.driversLicense.toString()
 
-            SampleDataUsers.addUser(newUser)
+            SampleDataPolicies.addPolicy(newPolicy)
             findNavController().navigate(R.id.action_personalInformationFragmentComprehensive_to_vehicleDetailsFragment)
         }
 
 
         return view
     }
-
 }

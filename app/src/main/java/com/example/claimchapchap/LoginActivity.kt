@@ -1,13 +1,21 @@
 package com.example.claimchapchap
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.view.KeyEvent
 import android.view.View
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.claimchapchap.api.RetrofitClient
 import com.example.claimchapchap.databinding.ActivityLoginBinding
+import com.example.claimchapchap.models.DefaultResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-class LoginActivity : AppCompatActivity(), View.OnClickListener, View.OnFocusChangeListener, View.OnKeyListener {
+class LoginActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,77 +23,19 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, View.OnFocusCha
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.etEmailAddress.onFocusChangeListener = this
-        binding.etPassword.onFocusChangeListener = this
-    }
+        val btnLogIn: Button = findViewById(R.id.btnLogIn)
+        btnLogIn.setOnClickListener {
+            val email = binding.etEmailAddress.text.toString()
+            val password = binding.etPassword.text.toString()
 
-    private fun validateEmail(): Boolean{
-        var errorMessage: String? = null
-        val mail = binding.etEmailAddress.text.toString()
-        if (mail.isEmpty()){
-            errorMessage = "Email Address is Required"
-        }else if (!Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
-            errorMessage = "Invalid Email Address"
-        }
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(applicationContext, "Missing Fields", Toast.LENGTH_SHORT).show()
+            } else {
 
-        if (errorMessage!=null){
-            binding.emailTil.apply{
-                isErrorEnabled = true
-                error = errorMessage
+                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
             }
+
         }
 
-        return errorMessage == null
-    }
-
-    private fun validatePassword(): Boolean{
-        var errorMessage: String? = null
-        val pass = binding.etPassword.text.toString()
-        if (pass.isEmpty()){
-            errorMessage = "Password is Required"
-        }else if (pass.length < 6){
-            errorMessage = "Password Must Be 6 or More Characters"
-        }
-        if (errorMessage!=null){
-            binding.passwordTil.apply {
-                isErrorEnabled = true
-                error = errorMessage
-            }
-        }
-        return errorMessage == null
-    }
-
-
-    override fun onClick(view: View?) {
-        TODO("Not yet implemented")
-    }
-
-    override fun onFocusChange(view: View?, hasFocus: Boolean) {
-        if (view!=null){
-            when(view.id){
-                R.id.etEmailAddress -> {
-                    if (hasFocus){
-                        if (binding.emailTil.isCounterEnabled){
-                            binding.emailTil.isErrorEnabled = false
-                        }
-                    }else{
-                        validateEmail()
-                    }
-                }
-                R.id.etPassword -> {
-                    if (hasFocus){
-                        if (binding.passwordTil.isCounterEnabled){
-                            binding.passwordTil.isErrorEnabled = false
-                        }
-                    }else{
-                        validateEmail()
-                    }
-                }
-            }
-        }
-    }
-
-    override fun onKey(view: View?, keyCode: Int, event: KeyEvent?): Boolean {
-        TODO("Not yet implemented")
     }
 }

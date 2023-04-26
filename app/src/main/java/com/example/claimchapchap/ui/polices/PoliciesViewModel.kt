@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class PoliciesViewModel : ViewModel() {
 
     private val _carName = MutableLiveData<String>().apply {
-        value =
+
     }
     val text: LiveData<String> = _carName
 

@@ -12,6 +12,7 @@ import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyVehicleDetailsBinding
 import com.example.claimchapchap.databinding.FragmentComprehensiveVehicleDetailsBinding
 import com.example.claimchapchap.models.Policies
+import com.example.claimchapchap.sampleData.SampleDataPolicies
 import com.example.claimchapchap.sampleData.SampleDataUsers
 
 
@@ -34,14 +35,14 @@ class VehicleDetailsFragment : Fragment() {
         val next: Button = binding.btnNext
         next.setOnClickListener{
             val newPolicy = Policies()
-            newPolicy.firstName = binding.firstName.toString()
-            newPolicy.secondName = binding.secondName.toString()
-            newPolicy.email = binding.etEmailAddress.toString()
-            newPolicy.phoneNumber = binding.etPhoneNumber.toString()
-            newPolicy.password = binding.etPassword.toString()
-            newPolicy.cPassword = binding.etConfirmPassword.toString()
+            newPolicy.carMake = binding.carMake.toString()
+            newPolicy.carModel = binding.carModel.toString()
+            newPolicy.yom = binding.yearOfManufacture.toString()
+            newPolicy.dop = binding.dateOfPurchase.toString()
+            newPolicy.carValuation = binding.carValuation.toString()
+            newPolicy.numberPlate = binding.numberPlate.toString()
 
-            SampleDataUsers.addUser(newUser)
+            SampleDataPolicies.addPolicy(newPolicy)
             findNavController().navigate(R.id.action_vehicleDetailsFragment_to_comprehensiveCoverActivity)
         }
 

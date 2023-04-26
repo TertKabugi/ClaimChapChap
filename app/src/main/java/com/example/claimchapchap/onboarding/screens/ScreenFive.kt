@@ -36,7 +36,7 @@ class ScreenFive : Fragment() {
         val btnHome = binding.btnHome
         btnHome.setOnClickListener{
             findNavController().navigate(R.id.action_viewPagerFragment_to_mainActivity)
-            onBoardingFinished()
+            //onBoardingFinished()
         }
 
         return view

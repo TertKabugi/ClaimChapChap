@@ -9,12 +9,20 @@
     <fragment
         android:id="@+id/driver_one"
         android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverOne"
-        tools:layout="@layout/fragment_claims_driver_one" />
+        tools:layout="@layout/fragment_claims_driver_one" >
+        <action
+            android:id="@+id/action_driver_one_to_driver_two"
+            app:destination="@id/driver_two" />
+    </fragment>
 
     <fragment
         android:id="@+id/driver_two"
         android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverTwo"
-        tools:layout="@layout/fragment_claims_driver_two" />
+        tools:layout="@layout/fragment_claims_driver_two" >
+        <action
+            android:id="@+id/action_driver_two_to_third_party"
+            app:destination="@id/third_party" />
+    </fragment>
 
     <fragment
         android:id="@+id/third_party"

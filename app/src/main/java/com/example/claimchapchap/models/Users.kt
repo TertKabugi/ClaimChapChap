@@ -1,11 +1,11 @@
 package com.example.claimchapchap.models
 
-class Users {
-    var id: Int = 0
-    var firstName: String? = null
-    var secondName: String? = null
-    var phoneNumber: String? = null
-    var email: String? = null
-    var password: String? = null
-    var cPassword: String? = null
-}
+data class Users(
+    var id: Int,
+    var firstName: String,
+    var secondName: String,
+    var email: String,
+    var phoneNumber: String,
+    var password: String,
+    var cPassword: String
+)

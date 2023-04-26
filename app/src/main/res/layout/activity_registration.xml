@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:hint="@string/second_name"
-                    android:inputType="date"
+                    android:inputType="text"
                     android:paddingHorizontal="8dp"
                     android:paddingVertical="12dp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/email_address"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -108,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/phone_number"
-                android:inputType="text"
+                android:inputType="number"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
 

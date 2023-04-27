@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/email_address"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="@string/password"
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="12dp" />
 
@@ -132,6 +132,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"

@@ -111,4 +111,5 @@
     <string name="make_a_claim">Make a Claim</string>
     <string name="confirm_your_claim">Confirm Your Claim</string>
     <string name="write_birth_certificate_in_national_id_field_for_minors">Write Birth Certificate in National ID field for minors</string>
+    <string name="verify_your_account">Verify your Account</string>
 </resources>

@@ -11,7 +11,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Verify your Account"
+        android:text="@string/verify_your_account"
         android:textColor="@color/red"
         android:textStyle="bold"
         android:gravity="center"
@@ -26,7 +26,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="We have sent you a code to verify your Telephone No"
+        android:text="We have sent you a code to verify your Email Address"
         android:textSize="15sp"
         android:textColor="@color/blue"
         android:layout_marginTop="15dp"
@@ -43,38 +43,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-        <TextView
+        <EditText
             android:id="@+id/textView10"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
+            android:inputType="number"
             android:background="@drawable/number_input"
             android:gravity="center" />
 
-        <TextView
+        <EditText
             android:id="@+id/textView11"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginEnd="20dp"
+            android:inputType="number"
             android:layout_weight="1"
             android:background="@drawable/number_input"
             android:gravity="center" />
 
-        <TextView
+        <EditText
             android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="50dp"
+            android:inputType="number"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:background="@drawable/number_input"
             android:gravity="center" />
 
-        <TextView
+        <EditText
             android:id="@+id/textView13"
             android:layout_width="0dp"
             android:layout_height="50dp"
+            android:inputType="number"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
             android:background="@drawable/number_input"
@@ -94,172 +98,175 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
-    <RelativeLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+    <Button
+        android:id="@+id/next"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="416dp"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resend"
-        app:layout_constraintVertical_bias="0.04">
+        app:layout_constraintTop_toBottomOf="@+id/resend" />
 
-        <LinearLayout
-            android:id="@+id/firstRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp">
+    <!--    <RelativeLayout-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/resend"-->
+<!--        app:layout_constraintVertical_bias="0.04">-->
 
-            <TextView
-                android:id="@+id/one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/firstRow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="0dp">-->
 
-            <TextView
-                android:id="@+id/two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/one"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="1"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-            <TextView
-                android:id="@+id/three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/two"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="2"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-        <LinearLayout
-            android:id="@+id/secondRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/firstRow"
-            android:layout_marginTop="45dp">
+<!--            <TextView-->
+<!--                android:id="@+id/three"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="3"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
+<!--        </LinearLayout>-->
 
-            <TextView
-                android:id="@+id/four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/secondRow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/firstRow"-->
+<!--            android:layout_marginTop="45dp">-->
 
-            <TextView
-                android:id="@+id/five"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="5"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/four"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="4"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-            <TextView
-                android:id="@+id/six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="6"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/five"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="5"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-        <LinearLayout
-            android:id="@+id/thirdRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/secondRow"
-            android:layout_marginTop="45dp">
+<!--            <TextView-->
+<!--                android:id="@+id/six"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="6"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
+<!--        </LinearLayout>-->
 
-            <TextView
-                android:id="@+id/seven"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="7"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/thirdRow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/secondRow"-->
+<!--            android:layout_marginTop="45dp">-->
 
-            <TextView
-                android:id="@+id/eight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="8"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/seven"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="7"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-            <TextView
-                android:id="@+id/nine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="9"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/eight"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="8"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-        <LinearLayout
-            android:id="@+id/fourthRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/thirdRow"
-            android:layout_marginTop="45dp">
+<!--            <TextView-->
+<!--                android:id="@+id/nine"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="9"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
+<!--        </LinearLayout>-->
 
-            <ImageView
-                android:id="@+id/back"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/fourthRow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/thirdRow"-->
+<!--            android:layout_marginTop="45dp">-->
 
-            <TextView
-                android:id="@+id/zero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@color/blue"
-                android:textSize="40sp" />
+<!--            <ImageView-->
+<!--                android:id="@+id/back"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />-->
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_baseline_check_24" />
+<!--            <TextView-->
+<!--                android:id="@+id/zero"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="0"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="40sp" />-->
 
-            <!--            <ImageButton-->
-            <!--                android:id="@+id/imageButton2"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_weight="1"-->
-            <!--                android:background="@color/Transparent"-->
-            <!--                app:srcCompat="@drawable/ic_baseline_check_24" />-->
-
-        </LinearLayout>
-    </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:id="@+id/next"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                app:srcCompat="@drawable/ic_baseline_check_24" />-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

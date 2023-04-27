@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface Api {
     @FormUrlEncoded
-    @POST("createuser")
+    @POST("register")
     fun createUser(
         @Field("firstName") firstName: String,
         @Field("secondName") secondName: String,

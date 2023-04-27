@@ -66,7 +66,7 @@ class RegistrationActivity : AppCompatActivity() {
 
                     })
                 
-                startActivity(Intent(this@RegistrationActivity, MainActivity::class.java))
+                startActivity(Intent(this@RegistrationActivity, VerifyAccount::class.java))
             }
 
         }

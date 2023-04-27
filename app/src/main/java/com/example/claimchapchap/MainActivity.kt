@@ -1,5 +1,6 @@
 package com.example.claimchapchap
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -12,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.claimchapchap.databinding.ActivityMainBinding
+import com.example.claimchapchap.storage.SharedPrefManager
 import com.example.claimchapchap.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +34,19 @@ class MainActivity : AppCompatActivity() {
         )
         navView.setupWithNavController(navController)
 
+
+
         // fragment manager
 
     }
+
+    //if user is not logged in
+    override fun onStart() {
+        super.onStart()
+
+        if(!SharedPrefManager.getInstance(this).isLoggedIn){
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+        }
+    }
+
 }

@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.claimchapchap.databinding.FragmentPoliciesBinding
 import com.example.claimchapchap.models.Policies
-import com.example.claimchapchap.sampleData.SampleDataPolicies
 import com.example.claimchapchap.services.PolicyServices
 import com.example.claimchapchap.services.ServiceBuilder
 import retrofit2.Call

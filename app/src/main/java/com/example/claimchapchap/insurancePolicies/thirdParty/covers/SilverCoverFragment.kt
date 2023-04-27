@@ -8,10 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.FragmentThirdpartyBronzeBinding
 import com.example.claimchapchap.databinding.FragmentThirdpartySilverBinding
 
-class SilverFragment : Fragment() {
+class SilverCoverFragment : Fragment() {
 
     private lateinit var binding: FragmentThirdpartySilverBinding
     override fun onCreateView(
@@ -24,7 +23,7 @@ class SilverFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_silverFragment2_to_silverQuote2)
+            findNavController().navigate(R.id.action_thirdPartyCoverFragment_to_silverQuoteFragment6)
         }
         return view
     }

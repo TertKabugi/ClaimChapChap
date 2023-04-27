@@ -23,7 +23,7 @@ class GoldFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_goldFragment_to_goldQuote)
+            findNavController().navigate(R.id.action_actOnlyCoverFragment_to_goldQuoteFragment5)
         }
         return view
     }

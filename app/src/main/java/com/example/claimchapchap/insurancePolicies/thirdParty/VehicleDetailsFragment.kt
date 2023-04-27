@@ -30,7 +30,7 @@ class VehicleDetailsFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_vehicleDetailsFragment_to_thirdPartyCoverActivity)
+            findNavController().navigate(R.id.action_vehicleDetailsFragment_to_thirdPartyCoverFragment)
         }
 
         return view

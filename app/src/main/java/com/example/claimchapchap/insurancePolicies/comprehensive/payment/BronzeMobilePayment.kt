@@ -26,7 +26,7 @@ class BronzeMobilePayment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeMobilePaymentFragment_to_bronzePaymentFragment)
+            findNavController().navigate(R.id.action_bronzeMobilePayment3_to_bronzePaymentFragment5)
         }
 
         return view

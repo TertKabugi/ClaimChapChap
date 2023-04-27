@@ -50,7 +50,7 @@ class ClaimsFragment : Fragment() {
 
         val next = binding.newClaim
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_navigation_claims_to_newClaimFragment)
+            findNavController().navigate(R.id.action_navigation_claims_to_claimsActivity)
         }
         return view
     }

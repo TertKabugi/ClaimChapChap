@@ -23,7 +23,7 @@ class GoldCardPaymentFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_goldCardPaymentFragment_to_goldPaymentFragment)
+            findNavController().navigate(R.id.action_goldCardPaymentFragment3_to_goldPaymentFragment5)
         }
 
         return view

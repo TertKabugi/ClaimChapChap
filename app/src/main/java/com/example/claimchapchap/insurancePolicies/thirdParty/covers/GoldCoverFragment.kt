@@ -8,10 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.ActivityThirdpartyCoverBinding
 import com.example.claimchapchap.databinding.FragmentThirdpartyGoldBinding
 
-class GoldFragment : Fragment() {
+class GoldCoverFragment : Fragment() {
 
     private lateinit var binding: FragmentThirdpartyGoldBinding
     override fun onCreateView(
@@ -24,7 +23,7 @@ class GoldFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_goldFragment2_to_goldQuote2)
+            findNavController().navigate(R.id.action_thirdPartyCoverFragment_to_goldQuoteFragment)
         }
         return view
     }

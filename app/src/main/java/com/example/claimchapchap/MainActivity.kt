@@ -44,9 +44,9 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        if(!SharedPrefManager.getInstance(this).isLoggedIn){
-            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
-        }
+//        if(!SharedPrefManager.getInstance(this).isLoggedIn){
+//            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+//        }
     }
 
 }

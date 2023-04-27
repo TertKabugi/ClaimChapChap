@@ -54,7 +54,21 @@ class NewClaimFragmentTwo : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_newClaimMainFragment_to_partiesInvolvedFragment)
+            val incidentSeverity = binding.incident.text.toString()
+            val authoritiesContacted = binding.authorities.text.toString()
+            val policeReport = binding.policeReport.text.toString()
+            val propertyDamage = binding.propertyDamage.text.toString()
+            val bodyInjuries = binding.bodilyInjuries.text.toString()
+            val witnesses = binding.witnesses.text.toString()
+
+            findNavController().navigate(R.id.action_newClaimMainFragment2_to_partiesInvolvedFragment2)
+
+//            if (incidentSeverity.isEmpty() || authoritiesContacted.isEmpty() || policeReport.isEmpty() || propertyDamage.isEmpty() || bodyInjuries.isEmpty() || witnesses.isEmpty()) {
+//                Toast.makeText(requireActivity(), "Missing Fields", Toast.LENGTH_SHORT).show()
+//            } else {
+//                findNavController().navigate(R.id.action_newClaimMainFragment2_to_partiesInvolvedFragment2)
+//            }
+
         }
 
         return view

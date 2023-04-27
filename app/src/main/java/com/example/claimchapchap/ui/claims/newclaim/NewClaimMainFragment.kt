@@ -24,7 +24,7 @@ class NewClaimMainFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_newClaimMainFragment_to_navigation_claims)
+            findNavController().navigate(R.id.action_newClaimMainFragment2_to_mainActivity4)
         }
 
         val viewPager = binding.viewPager as ViewPager

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
+ <navigation
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,16 +27,164 @@
             android:id="@+id/action_vehicleDetailsFragment_to_personalInformationFragment2"
             app:destination="@id/personalInformationFragment" />
         <action
-            android:id="@+id/action_vehicleDetailsFragment_to_thirdPartyCoverActivity"
-            app:destination="@id/thirdPartyCoverActivity" />
+            android:id="@+id/action_vehicleDetailsFragment_to_thirdPartyCoverFragment"
+            app:destination="@id/thirdPartyCoverFragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity2"
         android:name="com.example.claimchapchap.MainActivity"
         android:label="MainActivity" />
-    <activity
-        android:id="@+id/thirdPartyCoverActivity"
-        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.ThirdPartyCoverActivity"
-        android:label="activity_thirdparty_cover"
-        tools:layout="@layout/activity_thirdparty_cover" />
+    <fragment
+        android:id="@+id/thirdPartyCoverFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.covers.ThirdPartyCoverFragment"
+        android:label="fragment_thirdparty_cover"
+        tools:layout="@layout/fragment_thirdparty_cover" >
+        <action
+            android:id="@+id/action_thirdPartyCoverFragment_to_goldQuoteFragment"
+            app:destination="@id/goldQuoteFragment" />
+        <action
+            android:id="@+id/action_thirdPartyCoverFragment_to_silverQuoteFragment6"
+            app:destination="@id/silverQuoteFragment6" />
+        <action
+            android:id="@+id/action_thirdPartyCoverFragment_to_bronzeQuoteFragment"
+            app:destination="@id/bronzeQuoteFragment" />
+        <action
+            android:id="@+id/action_thirdPartyCoverFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.quotes.GoldQuoteFragment"
+        android:label="fragment_thirdparty_gold_quote"
+        tools:layout="@layout/fragment_thirdparty_gold_quote" >
+        <action
+            android:id="@+id/action_goldQuoteFragment_to_goldPaymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+        <action
+            android:id="@+id/action_goldQuoteFragment_to_thirdPartyCoverFragment"
+            app:destination="@id/thirdPartyCoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverQuoteFragment6"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.quotes.SilverQuoteFragment"
+        android:label="fragment_thirdparty_silver_quote"
+        tools:layout="@layout/fragment_thirdparty_silver_quote" >
+        <action
+            android:id="@+id/action_silverQuoteFragment6_to_silverPaymentFragment5"
+            app:destination="@id/silverPaymentFragment5" />
+        <action
+            android:id="@+id/action_silverQuoteFragment6_to_thirdPartyCoverFragment"
+            app:destination="@id/thirdPartyCoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeQuoteFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.quotes.BronzeQuoteFragment"
+        android:label="fragment_thirdparty_bronze_quote"
+        tools:layout="@layout/fragment_thirdparty_bronze_quote" >
+        <action
+            android:id="@+id/action_bronzeQuoteFragment_to_bronzePaymentFragment"
+            app:destination="@id/bronzePaymentFragment" />
+        <action
+            android:id="@+id/action_bronzeQuoteFragment_to_thirdPartyCoverFragment"
+            app:destination="@id/thirdPartyCoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldPaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.GoldPaymentFragment"
+        android:label="fragment_thirdparty_gold_payment"
+        tools:layout="@layout/fragment_thirdparty_gold_payment" >
+        <action
+            android:id="@+id/action_goldPaymentFragment_to_goldQuoteFragment"
+            app:destination="@id/goldQuoteFragment" />
+        <action
+            android:id="@+id/action_goldPaymentFragment_to_goldMobilePayment3"
+            app:destination="@id/goldMobilePayment3" />
+        <action
+            android:id="@+id/action_goldPaymentFragment_to_goldCardPayment3"
+            app:destination="@id/goldCardPayment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverPaymentFragment5"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverPaymentFragment"
+        android:label="fragment_thirdparty_silver_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_payment" >
+        <action
+            android:id="@+id/action_silverPaymentFragment5_to_silverMobilePayment4"
+            app:destination="@id/silverMobilePayment4" />
+        <action
+            android:id="@+id/action_silverPaymentFragment5_to_silverCardPayment4"
+            app:destination="@id/silverCardPayment4" />
+        <action
+            android:id="@+id/action_silverPaymentFragment5_to_silverQuoteFragment6"
+            app:destination="@id/silverQuoteFragment6" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzePaymentFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.BronzePaymentFragment"
+        android:label="fragment_thirdparty_bronze_payment"
+        tools:layout="@layout/fragment_thirdparty_bronze_payment" >
+        <action
+            android:id="@+id/action_bronzePaymentFragment_to_bronzeQuoteFragment"
+            app:destination="@id/bronzeQuoteFragment" />
+        <action
+            android:id="@+id/action_bronzePaymentFragment_to_bronzeMobilePayment4"
+            app:destination="@id/bronzeMobilePayment4" />
+        <action
+            android:id="@+id/action_bronzePaymentFragment_to_bronzeCardPayment4"
+            app:destination="@id/bronzeCardPayment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldMobilePayment3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.GoldMobilePayment"
+        android:label="fragment_thirdparty_gold_mobile_payment"
+        tools:layout="@layout/fragment_thirdparty_gold_mobile_payment" >
+        <action
+            android:id="@+id/action_goldMobilePayment3_to_goldPaymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldCardPayment3"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.GoldCardPayment"
+        android:label="fragment_thirdparty_gold_card_payment"
+        tools:layout="@layout/fragment_thirdparty_gold_card_payment" >
+        <action
+            android:id="@+id/action_goldCardPayment3_to_goldPaymentFragment"
+            app:destination="@id/goldPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverMobilePayment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverMobilePayment"
+        android:label="fragment_thirdparty_silver_mobile_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_mobile_payment" >
+        <action
+            android:id="@+id/action_silverMobilePayment4_to_silverPaymentFragment5"
+            app:destination="@id/silverPaymentFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeMobilePayment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.BronzeMobilePayment"
+        android:label="fragment_thirdparty_bronze_mobile_payment"
+        tools:layout="@layout/fragment_thirdparty_bronze_mobile_payment" >
+        <action
+            android:id="@+id/action_bronzeMobilePayment4_to_bronzePaymentFragment"
+            app:destination="@id/bronzePaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/silverCardPayment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.SilverCardPayment"
+        android:label="fragment_thirdparty_silver_card_payment"
+        tools:layout="@layout/fragment_thirdparty_silver_card_payment" >
+        <action
+            android:id="@+id/action_silverCardPayment4_to_silverPaymentFragment5"
+            app:destination="@id/silverPaymentFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/bronzeCardPayment4"
+        android:name="com.example.claimchapchap.insurancePolicies.thirdParty.payment.BronzeCardPayment"
+        android:label="fragment_thirdparty_bronze_card_payment"
+        tools:layout="@layout/fragment_thirdparty_bronze_card_payment" >
+        <action
+            android:id="@+id/action_bronzeCardPayment4_to_bronzePaymentFragment"
+            app:destination="@id/bronzePaymentFragment" />
+    </fragment>
 </navigation>

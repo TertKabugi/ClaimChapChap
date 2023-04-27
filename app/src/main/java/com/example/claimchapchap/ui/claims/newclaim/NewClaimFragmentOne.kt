@@ -1,5 +1,6 @@
 package com.example.claimchapchap.ui.claims.newclaim
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,10 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.Button
-import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.widget.ViewPager2
+import android.widget.Toast
+import androidx.viewpager.widget.ViewPager
 import com.example.claimchapchap.R
+import com.example.claimchapchap.VerifyAccount
 import com.example.claimchapchap.databinding.FragmentNewClaimOneBinding
 
 class NewClaimFragmentOne : Fragment() {
@@ -34,9 +35,22 @@ class NewClaimFragmentOne : Fragment() {
         val collisionAdapter = ArrayAdapter(requireContext(),R.layout.z_list_collision_type, collisionType)
         collision.setAdapter(collisionAdapter)
 
-        val next: Button = binding.btnNext
+        val viewPager = activity?.findViewById<ViewPager>(R.id.viewPager)
+        val next = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_newClaimFragmentOne2_to_newClaimFragmentTwo2)
+
+            val policyNumber = binding.policyNumber.text.toString()
+            val location = binding.location.text.toString()
+            val accidentDate = binding.accidentDate.text.toString()
+            val accidentTime = binding.accidentTime.text.toString()
+            val incidentType = binding.incident.text.toString()
+            val collisionType = binding.collision.text.toString()
+
+            if (policyNumber.isEmpty() || location.isEmpty() || accidentDate.isEmpty() || accidentTime.isEmpty() || incidentType.isEmpty() || collisionType.isEmpty()) {
+                Toast.makeText(requireActivity(), "Missing Fields", Toast.LENGTH_SHORT).show()
+            } else {
+                viewPager?.currentItem = 1
+            }
 
         }
         return view

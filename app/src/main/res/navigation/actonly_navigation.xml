@@ -28,7 +28,7 @@
             app:destination="@id/personalInformationFragment" />
         <action
             android:id="@+id/action_vehicleDetailsFragment_to_actOnlyCoverActivity"
-            app:destination="@id/actOnlyCoverActivity" />
+            app:destination="@id/actOnlyCoverFragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
@@ -39,4 +39,39 @@
         android:name="com.example.claimchapchap.insurancePolicies.actOnly.ActOnlyCoverActivity"
         android:label="activity_actonly_covers"
         tools:layout="@layout/activity_actonly_covers" />
+    <fragment
+        android:id="@+id/actOnlyCoverFragment"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.covers.ActOnlyCoverFragment"
+        android:label="fragment_actonly_cover"
+        tools:layout="@layout/fragment_actonly_cover" >
+        <action
+            android:id="@+id/action_actOnlyCoverFragment_to_goldQuoteFragment5"
+            app:destination="@id/goldQuoteFragment5" />
+        <action
+            android:id="@+id/action_actOnlyCoverFragment_to_bronzeQuoteFragment5"
+            app:destination="@id/bronzeQuoteFragment5" />
+        <action
+            android:id="@+id/action_actOnlyCoverFragment_to_silverQuoteFragment4"
+            app:destination="@id/silverQuoteFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/goldQuoteFragment5"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.quotes.GoldQuoteFragment"
+        android:label="fragment_actonly_gold_quote"
+        tools:layout="@layout/fragment_actonly_gold_quote" />
+    <fragment
+        android:id="@+id/bronzeQuoteFragment5"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.quotes.BronzeQuoteFragment"
+        android:label="fragment_actonly_bronze_quote"
+        tools:layout="@layout/fragment_actonly_bronze_quote" />
+    <fragment
+        android:id="@+id/silverQuoteFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.quotes.SilverQuoteFragment"
+        android:label="fragment_actonly_silver_quote"
+        tools:layout="@layout/fragment_actonly_silver_quote" />
+    <fragment
+        android:id="@+id/goldFragment4"
+        android:name="com.example.claimchapchap.insurancePolicies.actOnly.covers.GoldFragment"
+        android:label="fragment_actonly_gold"
+        tools:layout="@layout/fragment_actonly_gold" />
 </navigation>

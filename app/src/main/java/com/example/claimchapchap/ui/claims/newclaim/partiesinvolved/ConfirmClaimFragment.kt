@@ -23,7 +23,7 @@ class ConfirmClaimFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_confirmClaimFragment_to_partiesInvolvedFragment)
+            findNavController().navigate(R.id.action_confirmClaimFragment2_to_partiesInvolvedFragment2)
         }
         return view
     }

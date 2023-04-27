@@ -30,12 +30,5 @@ class NewClaimActivity : AppCompatActivity() {
         viewPager.adapter = fragmentAdapter
         tablayout.setupWithViewPager(viewPager)
 
-//        val item = listOf("me","me","me","me","me")
-//        val text: AutoCompleteTextView = binding.text
-//        val adapter = ArrayAdapter(this,R.layout.z_list_item, item)
-//        text.setAdapter(adapter)
-
-
-
     }
 }

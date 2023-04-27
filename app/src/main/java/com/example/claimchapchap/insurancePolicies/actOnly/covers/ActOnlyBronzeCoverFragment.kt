@@ -8,22 +8,22 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.FragmentActonlySilverBinding
+import com.example.claimchapchap.databinding.FragmentActonlyBronzeBinding
 
-class SilverFragment : Fragment() {
+class BronzeFragment : Fragment() {
 
-    private lateinit var binding: FragmentActonlySilverBinding
+    private lateinit var binding: FragmentActonlyBronzeBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentActonlySilverBinding.inflate(layoutInflater)
+        binding = FragmentActonlyBronzeBinding.inflate(layoutInflater)
         val view = binding.root
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_silverFragment_to_silverQuote)
+            findNavController().navigate(R.id.action_actOnlyCoverFragment_to_bronzeQuoteFragment5)
         }
         return view
     }

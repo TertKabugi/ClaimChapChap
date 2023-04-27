@@ -112,4 +112,6 @@
     <string name="confirm_your_claim">Confirm Your Claim</string>
     <string name="write_birth_certificate_in_national_id_field_for_minors">Write Birth Certificate in National ID field for minors</string>
     <string name="verify_your_account">Verify your Account</string>
+    <string name="accident_information">Accident Information</string>
+    <string name="choose_third_party_cover">Choose Third Party Cover</string>
 </resources>

@@ -4,28 +4,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/claim_navigation"
-    app:startDestination="@+id/driver_one">
-
+    app:startDestination="@id/newClaimMainFragment2">
     <fragment
-        android:id="@+id/driver_one"
-        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverOne"
-        tools:layout="@layout/fragment_claims_driver_one" >
+        android:id="@+id/newClaimMainFragment2"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.NewClaimMainFragment"
+        android:label="fragment_new_claim_main"
+        tools:layout="@layout/fragment_new_claim_main" >
         <action
-            android:id="@+id/action_driver_one_to_driver_two"
-            app:destination="@id/driver_two" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/driver_two"
-        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.DriverTwo"
-        tools:layout="@layout/fragment_claims_driver_two" >
+            android:id="@+id/action_newClaimMainFragment2_to_partiesInvolvedFragment2"
+            app:destination="@id/partiesInvolvedFragment2" />
         <action
-            android:id="@+id/action_driver_two_to_third_party"
-            app:destination="@id/third_party" />
+            android:id="@+id/action_newClaimMainFragment2_to_mainActivity4"
+            app:destination="@id/mainActivity4" />
     </fragment>
-
     <fragment
-        android:id="@+id/third_party"
-        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.ThirdParty"
-        tools:layout="@layout/fragment_claims_third_party" />
+        android:id="@+id/partiesInvolvedFragment2"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.PartiesInvolvedFragment"
+        android:label="fragment_claims_parties_involved"
+        tools:layout="@layout/fragment_claims_parties_involved" >
+        <action
+            android:id="@+id/action_partiesInvolvedFragment2_to_confirmClaimFragment2"
+            app:destination="@id/confirmClaimFragment2" />
+        <action
+            android:id="@+id/action_partiesInvolvedFragment2_to_newClaimMainFragment2"
+            app:destination="@id/newClaimMainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmClaimFragment2"
+        android:name="com.example.claimchapchap.ui.claims.newclaim.partiesinvolved.ConfirmClaimFragment"
+        android:label="fragment_claim_confirm_claim"
+        tools:layout="@layout/fragment_claim_confirm_claim" >
+        <action
+            android:id="@+id/action_confirmClaimFragment2_to_partiesInvolvedFragment2"
+            app:destination="@id/partiesInvolvedFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity4"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
+
 </navigation>

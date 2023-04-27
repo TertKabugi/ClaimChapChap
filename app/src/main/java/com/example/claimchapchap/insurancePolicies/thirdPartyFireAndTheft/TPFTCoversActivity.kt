@@ -10,7 +10,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.claimchapchap.MainActivity
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.ActivityThirdpartyCoverBinding
 import com.example.claimchapchap.databinding.ActivityTpftCoversBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

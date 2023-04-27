@@ -52,7 +52,7 @@
         android:layout_width="380dp"
         android:layout_height="450dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/number_input"
+        android:background="@drawable/rounded_corners_one"
         android:backgroundTint="@color/chilean_heath"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,9 +81,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Claim Number"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Policy Number"
                 android:textSize="20sp"/>
         </RelativeLayout>
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Car Involved"
                 android:textSize="20sp"/>
         </RelativeLayout>
@@ -161,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Number Plate"
                 android:textSize="20sp"/>
         </RelativeLayout>
@@ -188,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Accident Date"
                 android:textSize="20sp"/>
         </RelativeLayout>
@@ -215,7 +215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Accident Location"
                 android:textSize="20sp"/>
         </RelativeLayout>
@@ -242,9 +242,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="@string/incident_severity"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -269,7 +269,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
+                android:layout_marginEnd="10dp"
                 android:text="Parties Involved"
                 android:textSize="20sp"/>
         </RelativeLayout>

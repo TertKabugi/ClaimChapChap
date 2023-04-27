@@ -24,7 +24,7 @@ class BronzeCoverFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_bronze_cover_to_comprehensiveBronzeQuote)
+            findNavController().navigate(R.id.action_comprehensiveCoverFragment_to_bronzeQuoteFragment6)
         }
         return view
     }

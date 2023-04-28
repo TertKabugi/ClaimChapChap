@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_confirmClaimFragment2_to_partiesInvolvedFragment2"
             app:destination="@id/partiesInvolvedFragment2" />
+        <action
+            android:id="@+id/action_confirmClaimFragment2_to_mainActivity4"
+            app:destination="@id/mainActivity4" />
     </fragment>
     <activity
         android:id="@+id/mainActivity4"

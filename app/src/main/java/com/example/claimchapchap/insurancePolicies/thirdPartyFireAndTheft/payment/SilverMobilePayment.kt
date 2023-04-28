@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentTpftBronzePaymentBinding
@@ -30,8 +33,25 @@ class SilverMobilePayment : Fragment() {
         }
         val next: Button = binding.button4
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_silverMobilePayment_to_mainActivity3)
+            showTPFTDialog()
         }
         return view
+    }
+    private fun showTPFTDialog() {
+        val tpftDialog = AlertDialog.Builder(requireActivity())
+        tpftDialog.setTitle("Do You Want To Apply For This Third Party Fire and Theft Insurance Plan?")
+        val input = EditText(requireActivity())
+        tpftDialog.setView(input)
+        tpftDialog.setPositiveButton(
+            "Yes"
+        ) { dialog, which ->
+
+            Toast.makeText(requireActivity(), "Third Party Fire and Theft Insurance Plan Applied Successfully!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_silverMobilePayment_to_mainActivity3)
+        }
+        tpftDialog.setNegativeButton(
+            "NO"
+        ) { dialog, which -> dialog.dismiss() }
+        tpftDialog.show()
     }
 }

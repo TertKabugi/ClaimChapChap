@@ -114,4 +114,5 @@
     <string name="verify_your_account">Verify your Account</string>
     <string name="accident_information">Accident Information</string>
     <string name="choose_third_party_cover">Choose Third Party Cover</string>
+    <string name="notifications">Notifications</string>
 </resources>

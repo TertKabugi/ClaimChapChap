@@ -275,4 +275,17 @@
         </RelativeLayout>
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/btnClaim"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="132dp"
+        android:text="Claim"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

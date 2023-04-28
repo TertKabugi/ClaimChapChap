@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_navigation_home_to_personalInformationFragmentActOnly"
             app:destination="@id/actOnlyMainActivity" />
+        <action
+            android:id="@+id/action_navigation_home_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
     </fragment>
 
     <fragment
@@ -107,4 +110,17 @@
         android:name="com.example.claimchapchap.ui.claims.ClaimsActivity"
         android:label="activity_claims"
         tools:layout="@layout/activity_claims" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.claimchapchap.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_mainActivity5"
+            app:destination="@id/mainActivity5" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity5"
+        android:name="com.example.claimchapchap.MainActivity"
+        android:label="MainActivity" />
 </navigation>

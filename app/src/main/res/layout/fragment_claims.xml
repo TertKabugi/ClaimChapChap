@@ -146,16 +146,15 @@
                     android:textSize="15sp"/>
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_centerHorizontal="true"
                 android:id="@+id/newClaim"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:layout_below="@+id/rlPolicyTwo"
-                android:background="@drawable/rounded_corners_one"
-                android:backgroundTint="@color/blue"
-                android:gravity="center">
+                android:background="@drawable/number_input"
+                android:backgroundTint="@color/blue">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -165,15 +164,13 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView3"
-                    android:layout_marginTop="-1dp"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
                     android:text="@string/new_claim"
-                    android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
-            </RelativeLayout>
+                    android:textSize="30sp" />
+            </LinearLayout>
 
         </RelativeLayout>
 

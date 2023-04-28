@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensiveBronzeCardPaymentBinding
@@ -30,8 +33,26 @@ class BronzeCardPayment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeCardPayment3_to_mainActivity)
+            showComprehensiveDialog()
         }
         return view
+    }
+
+    private fun showComprehensiveDialog() {
+        val comprehensiveDialog = AlertDialog.Builder(requireActivity())
+        comprehensiveDialog.setTitle("Do You Want To Apply For This Comprehensive Plan?")
+        val input = EditText(requireActivity())
+        comprehensiveDialog.setView(input)
+        comprehensiveDialog.setPositiveButton(
+            "Yes"
+        ) { dialog, which ->
+
+            Toast.makeText(requireActivity(), "Comprehensive Plan Applied Successfully!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_bronzeCardPayment3_to_mainActivity)
+        }
+        comprehensiveDialog.setNegativeButton(
+            "NO"
+        ) { dialog, which -> dialog.dismiss() }
+        comprehensiveDialog.show()
     }
 }

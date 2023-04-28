@@ -17,50 +17,6 @@
         tools:layout_editor_absoluteX="0dp">
 
         <RelativeLayout
-            android:id="@+id/rlTopNavbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="220dp"
-                android:src="@drawable/ic_menu" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="43dp"
-                    android:layout_height="45dp"
-                    android:layout_marginEnd="20dp"
-                    android:src="@drawable/ic_search" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="43dp"
-                    android:layout_height="45dp"
-                    android:layout_marginEnd="0dp"
-                    android:src="@drawable/ic_baseline_notifications_24" />
-
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_below="@+id/rlTopNavbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp">
@@ -71,11 +27,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:text="@string/hello"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/text_help"
@@ -86,9 +42,18 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/white"
                 android:text="@string/help_today"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_notifications_24" />
 
         </RelativeLayout>
     </RelativeLayout>

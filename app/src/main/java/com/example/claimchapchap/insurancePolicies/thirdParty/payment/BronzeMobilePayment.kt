@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentThirdpartyBronzeMobilePaymentBinding
@@ -28,9 +31,25 @@ class BronzeMobilePayment : Fragment() {
         }
         val next: Button = binding.button4
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeMobilePayment4_to_mainActivity2)
+            showThirdPartyDialog()
         }
         return view
     }
+    private fun showThirdPartyDialog() {
+        val thirdPartyDialog = AlertDialog.Builder(requireActivity())
+        thirdPartyDialog.setTitle("Do You Want To Apply For This Third Party Insurance Plan?")
+        val input = EditText(requireActivity())
+        thirdPartyDialog.setView(input)
+        thirdPartyDialog.setPositiveButton(
+            "Yes"
+        ) { dialog, which ->
 
+            Toast.makeText(requireActivity(), "Third Party Insurance Plan Applied Successfully!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_bronzeMobilePayment4_to_mainActivity2)
+        }
+        thirdPartyDialog.setNegativeButton(
+            "NO"
+        ) { dialog, which -> dialog.dismiss() }
+        thirdPartyDialog.show()
+    }
 }

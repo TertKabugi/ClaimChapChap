@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -25,6 +26,10 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view: View = binding.root
 
+        val notification: ImageView = binding.notification
+        notification.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_notificationFragment)
+        }
         val comprehensive = binding.rlComprehensive
         comprehensive.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_home_to_personalInformationFragmentComprehensive)

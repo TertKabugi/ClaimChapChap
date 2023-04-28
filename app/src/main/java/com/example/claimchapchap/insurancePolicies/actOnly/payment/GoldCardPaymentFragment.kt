@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyGoldCardPaymentBinding
@@ -29,8 +32,25 @@ class GoldCardPaymentFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_goldCardPaymentFragment_to_mainActivity)
+            showActOnlyDialog()
         }
         return view
+    }
+    private fun showActOnlyDialog() {
+        val actOnlyDialog = AlertDialog.Builder(requireActivity())
+        actOnlyDialog.setTitle("Do You Want To Apply For This Act Only Insurance Plan?")
+        val input = EditText(requireActivity())
+        actOnlyDialog.setView(input)
+        actOnlyDialog.setPositiveButton(
+            "Yes"
+        ) { dialog, which ->
+
+            Toast.makeText(requireActivity(), "Act Only Insurance Plan Applied Successfully!", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_goldCardPaymentFragment_to_mainActivity)
+        }
+        actOnlyDialog.setNegativeButton(
+            "NO"
+        ) { dialog, which -> dialog.dismiss() }
+        actOnlyDialog.show()
     }
 }

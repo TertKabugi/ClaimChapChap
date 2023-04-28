@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
@@ -26,7 +27,10 @@ class SilverMobilePayment : Fragment() {
         back.setOnClickListener{
             findNavController().navigate(R.id.action_silverMobilePayment4_to_silverPaymentFragment5)
         }
-
+        val next: Button = binding.button4
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_silverMobilePayment4_to_mainActivity2)
+        }
         return view
     }
 

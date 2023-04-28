@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".insurancePolicies.actOnly.covers.ActOnlyCoverFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".insurancePolicies.thirdPartyFireAndTheft.covers.TPFTCoverFragment">
 
     <RelativeLayout
         android:id="@+id/actionBar"
@@ -30,20 +31,21 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:text="@string/act_only_motor_insurance_plan"
+            android:text="@string/third_party_fire_and_theft_plan"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="normal" />
     </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:text="Choose Act Only Cover"
-        android:textColor="@color/red"
-        android:textSize="30sp"
         android:layout_marginTop="10dp"
-        android:gravity="center"/>
+        android:layout_marginStart="13dp"
+        android:gravity="center"
+        android:text="Choose Third Party Fire and Theft Plan Cover"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabOne"
@@ -61,5 +63,4 @@
         android:layout_marginBottom="50dp"
         android:background="@color/gray"
         tools:ignore="SpeakableTextPresentCheck" />
-
 </LinearLayout>

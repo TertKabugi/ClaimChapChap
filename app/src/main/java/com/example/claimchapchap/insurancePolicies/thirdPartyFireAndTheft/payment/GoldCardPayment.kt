@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
@@ -24,9 +25,12 @@ class GoldCardPayment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_goldCardPayment2_to_goldPaymentFragment4)
+            findNavController().navigate(R.id.action_goldCardPayment_to_goldPaymentFragment6)
         }
-
+        val next: Button = binding.btnNext
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_goldCardPayment_to_mainActivity3)
+        }
         return view
     }
 }

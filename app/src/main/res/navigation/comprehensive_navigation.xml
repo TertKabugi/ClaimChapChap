@@ -142,6 +142,9 @@
         <action
             android:id="@+id/action_goldMobilePaymentFragment3_to_goldPaymentFragment5"
             app:destination="@id/goldPaymentFragment5" />
+        <action
+            android:id="@+id/action_goldMobilePaymentFragment3_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/goldCardPaymentFragment3"
@@ -151,6 +154,9 @@
         <action
             android:id="@+id/action_goldCardPaymentFragment3_to_goldPaymentFragment5"
             app:destination="@id/goldPaymentFragment5" />
+        <action
+            android:id="@+id/action_goldCardPaymentFragment3_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/silverMobilePayment2"
@@ -160,6 +166,9 @@
         <action
             android:id="@+id/action_silverMobilePayment2_to_silverPaymentFragment4"
             app:destination="@id/silverPaymentFragment4" />
+        <action
+            android:id="@+id/action_silverMobilePayment2_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/silverCardPayment3"
@@ -169,6 +178,9 @@
         <action
             android:id="@+id/action_silverCardPayment3_to_silverPaymentFragment4"
             app:destination="@id/silverPaymentFragment4" />
+        <action
+            android:id="@+id/action_silverCardPayment3_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/bronzeCardPayment3"
@@ -178,6 +190,9 @@
         <action
             android:id="@+id/action_bronzeCardPayment3_to_bronzePaymentFragment5"
             app:destination="@id/bronzePaymentFragment5" />
+        <action
+            android:id="@+id/action_bronzeCardPayment3_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
     <fragment
         android:id="@+id/bronzeMobilePayment3"
@@ -187,5 +202,8 @@
         <action
             android:id="@+id/action_bronzeMobilePayment3_to_bronzePaymentFragment5"
             app:destination="@id/bronzePaymentFragment5" />
+        <action
+            android:id="@+id/action_bronzeMobilePayment3_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
 </navigation>

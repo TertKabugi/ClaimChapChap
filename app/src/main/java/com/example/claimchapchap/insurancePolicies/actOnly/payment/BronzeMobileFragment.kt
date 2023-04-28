@@ -10,7 +10,6 @@ import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyBronzeMobileBinding
-import com.example.claimchapchap.databinding.FragmentActonlyBronzePaymentBinding
 
 class BronzeMobileFragment : Fragment() {
 
@@ -25,9 +24,13 @@ class BronzeMobileFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeMobileFragment_to_bronzePaymentFragment2)
+            findNavController().navigate(R.id.action_bronzeMobileFragment2_to_bronzePaymentFragment4)
         }
 
+        val next: Button = binding.button4
+        next.setOnClickListener{
+            findNavController().navigate(R.id.action_bronzeMobileFragment2_to_mainActivity)
+        }
 
         return view
     }

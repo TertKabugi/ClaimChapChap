@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.FragmentTpftBronzeQuoteBinding
 import com.example.claimchapchap.databinding.FragmentTpftGoldQuoteBinding
 
 class GoldQuoteFragment : Fragment() {
@@ -25,12 +24,12 @@ class GoldQuoteFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_goldQuoteFragment4_to_TPFTCoversActivity2)
+            findNavController().navigate(R.id.action_goldQuoteFragment3_to_TPFTCoverFragment)
         }
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_goldQuoteFragment4_to_goldPaymentFragment4)
+            findNavController().navigate(R.id.action_goldQuoteFragment3_to_goldPaymentFragment6)
         }
         return view
     }

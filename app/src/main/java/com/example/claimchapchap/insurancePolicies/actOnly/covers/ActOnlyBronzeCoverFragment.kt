@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyBronzeBinding
 
-class BronzeFragment : Fragment() {
+class ActOnlyBronzeCoverFragment : Fragment() {
 
     private lateinit var binding: FragmentActonlyBronzeBinding
     override fun onCreateView(

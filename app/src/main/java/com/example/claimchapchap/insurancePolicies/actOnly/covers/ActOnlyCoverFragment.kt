@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentActonlyCoverBinding
@@ -27,13 +29,18 @@ class ActOnlyCoverFragment : Fragment() {
         binding = FragmentActonlyCoverBinding.inflate(layoutInflater)
         val view = binding.root
 
+        val back: ImageView = binding.backIcon
+        back.setOnClickListener{
+            findNavController().navigate(R.id.action_actOnlyCoverFragment_to_vehicleDetailsFragment)
+        }
+
         val viewPager = binding.viewPager
         val tabLayout = binding.tabOne
 
         val fragmentAdapter = ActOnlyCoverAdapter(parentFragmentManager)
-        fragmentAdapter.addFragment(GoldCoverFragment(), "Gold")
-        fragmentAdapter.addFragment(SilverCoverFragment(), "Silver")
-        fragmentAdapter.addFragment(BronzeCoverFragment(), "Bronze")
+        fragmentAdapter.addFragment(ActOnlyGoldCoverFragment(), "Gold")
+        fragmentAdapter.addFragment(ActOnlySilverCoverFragment(), "Silver")
+        fragmentAdapter.addFragment(ActOnlyBronzeCoverFragment(), "Bronze")
 
         viewPager.adapter = fragmentAdapter
         tabLayout.setupWithViewPager(viewPager)

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
-import com.example.claimchapchap.databinding.FragmentActonlyGoldPaymentBinding
 import com.example.claimchapchap.databinding.FragmentActonlySilverPaymentBinding
 
 class SilverPaymentFragment : Fragment() {
@@ -24,7 +23,7 @@ class SilverPaymentFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_silverPaymentFragment_to_silverQuoteFragment2)
+            findNavController().navigate(R.id.action_silverPaymentFragment3_to_silverQuoteFragment4)
         }
 
         val radioGroup: RadioGroup = binding.radioGroup
@@ -37,10 +36,10 @@ class SilverPaymentFragment : Fragment() {
             if (id!=-1){
                 if (mobile.isChecked){
                     Toast.makeText(activity, "Mobile Payment is Selected", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_silverPaymentFragment_to_silverMobilePaymentFragment)
+                    findNavController().navigate(R.id.action_silverPaymentFragment3_to_silverMobilePaymentFragment2)
                 }else if (card.isChecked){
                     Toast.makeText(activity, "Card Payment is Selected", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_silverPaymentFragment_to_silverCardPaymentFragment)
+                    findNavController().navigate(R.id.action_silverPaymentFragment3_to_silverCardPaymentFragment2)
                 }
             }else{
                 Toast.makeText(activity,"Nothing is Selected", Toast.LENGTH_SHORT).show()

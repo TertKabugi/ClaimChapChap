@@ -9,21 +9,248 @@
 
     <RelativeLayout
         android:id="@+id/goldRelativeLayout"
-        android:background="@drawable/rounded_corners_one"
-        android:layout_width="380dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="390dp"
         android:layout_height="450dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corners_one"
+        android:backgroundTint="@color/chilean_heath"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
+            android:id="@+id/one"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="tpft bronze"
-            android:textSize="30sp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/claimNo"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Geographical limit"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/claimNoInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="East Africa"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/policyNo"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Personal Injury"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/policyNoInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="KES 1,000,000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Loss of Personal Effects"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="KES 100,000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/numberPlate"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="20dp"
+                android:text="Passenger Liability"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberPlateInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Min 1 million per per person max 50 million per event"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/four"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/accidentDate"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Third Party Persons"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accidentDateInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="10"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/five"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/accidentLocation"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Third Party Property Damage"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accidentLocationInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Min 1 million max 10 million"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/six"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/incidentSeverity"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Theft"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/incidentSeverityInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="100% value of the vehicle"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seven"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/partiesInvolved"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="Fire Vehicle Damage"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/partiesInvolvedInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Min 1 million max 5 million"
+                android:textSize="20sp" />
+        </LinearLayout>
+
     </RelativeLayout>
 
     <Button

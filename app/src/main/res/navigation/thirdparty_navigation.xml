@@ -141,6 +141,9 @@
         <action
             android:id="@+id/action_goldMobilePayment3_to_goldPaymentFragment"
             app:destination="@id/goldPaymentFragment" />
+        <action
+            android:id="@+id/action_goldMobilePayment3_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/goldCardPayment3"
@@ -150,6 +153,9 @@
         <action
             android:id="@+id/action_goldCardPayment3_to_goldPaymentFragment"
             app:destination="@id/goldPaymentFragment" />
+        <action
+            android:id="@+id/action_goldCardPayment3_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/silverMobilePayment4"
@@ -159,6 +165,9 @@
         <action
             android:id="@+id/action_silverMobilePayment4_to_silverPaymentFragment5"
             app:destination="@id/silverPaymentFragment5" />
+        <action
+            android:id="@+id/action_silverMobilePayment4_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/bronzeMobilePayment4"
@@ -168,6 +177,9 @@
         <action
             android:id="@+id/action_bronzeMobilePayment4_to_bronzePaymentFragment"
             app:destination="@id/bronzePaymentFragment" />
+        <action
+            android:id="@+id/action_bronzeMobilePayment4_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/silverCardPayment4"
@@ -177,6 +189,9 @@
         <action
             android:id="@+id/action_silverCardPayment4_to_silverPaymentFragment5"
             app:destination="@id/silverPaymentFragment5" />
+        <action
+            android:id="@+id/action_silverCardPayment4_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
     <fragment
         android:id="@+id/bronzeCardPayment4"
@@ -186,5 +201,8 @@
         <action
             android:id="@+id/action_bronzeCardPayment4_to_bronzePaymentFragment"
             app:destination="@id/bronzePaymentFragment" />
+        <action
+            android:id="@+id/action_bronzeCardPayment4_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
     </fragment>
 </navigation>

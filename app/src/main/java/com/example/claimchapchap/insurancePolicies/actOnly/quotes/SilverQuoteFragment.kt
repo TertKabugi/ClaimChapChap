@@ -24,12 +24,12 @@ class SilverQuoteFragment : Fragment() {
 
         val back: ImageView = binding.backIcon
         back.setOnClickListener{
-            findNavController().navigate(R.id.action_silverQuoteFragment_to_actOnlyCoverActivity)
+            findNavController().navigate(R.id.action_silverQuoteFragment4_to_actOnlyCoverFragment)
         }
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_silverQuoteFragment_to_silverPaymentFragment)
+            findNavController().navigate(R.id.action_silverQuoteFragment4_to_silverPaymentFragment3)
         }
 
         return view

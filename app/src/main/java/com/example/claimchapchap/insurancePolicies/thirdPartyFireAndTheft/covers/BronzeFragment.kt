@@ -23,7 +23,7 @@ class BronzeFragment : Fragment() {
 
         val next: Button = binding.btnNext
         next.setOnClickListener{
-            findNavController().navigate(R.id.action_bronzeFragment3_to_bronzeQuote3)
+            findNavController().navigate(R.id.action_TPFTCoverFragment_to_bronzeQuoteFragment3)
         }
 
         return view

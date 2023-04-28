@@ -13,7 +13,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.claimchapchap.databinding.ActivityMainBinding
-import com.example.claimchapchap.storage.SharedPrefManager
 import com.example.claimchapchap.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {

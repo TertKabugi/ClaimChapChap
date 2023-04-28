@@ -1,7 +1,6 @@
 package com.example.claimchapchap.api
 
-import android.provider.ContactsContract.CommonDataKinds.Email
-import com.example.claimchapchap.models.DefaultResponse
+import com.example.claimchapchap.models.LoginResponsePayload
 import com.example.claimchapchap.models.LoginResponse
 import retrofit2.Call
 import retrofit2.http.Field
@@ -19,7 +18,7 @@ interface Api {
         @Field("password") password: String,
         @Field("confirm password") cPassword: String
 
-    ): Call<DefaultResponse>
+    ): Call<LoginResponsePayload>
 
     @FormUrlEncoded
     @POST("userlogin")

@@ -7,13 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
-import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import com.example.claimchapchap.R
 import com.example.claimchapchap.databinding.FragmentComprehensivePersonalInformationBinding
-import com.example.claimchapchap.models.Policies
-import com.example.claimchapchap.models.Users
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PersonalInformationFragment : Fragment() {
 
